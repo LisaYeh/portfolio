@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-Hant-TW"><!-- InstanceBegin template="/Templates/content_tw.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">   
+<meta http-equiv="content-language" content="zh-Hant-TW" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />   
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>最新消息-高雄經站Kaohsiung Index</title>
+<!-- InstanceEndEditable --> 
+<link rel="shortcut icon" href="../../layout/tw/images/favicon.ico" type="image/x-icon"/> 
+<link href="../../layout/tw/css/style.css" rel="stylesheet" type="text/css" />
+<link href="../../layout/tw/css/editable_content.css" rel="stylesheet" type="text/css" />
+<link href="../../layout/tw/css/content.css" rel="stylesheet" type="text/css" />
+
+<!-- InstanceBeginEditable name="head_css" -->
+<!-- InstanceEndEditable -->   
+
+<script src="../../js/jquery-1.8.1.min.js"></script>   
+<script src="../../js/jquery-iifun.js"></script> 
+
+<!-- RWD -->
+<link href="../../layout/tw/css/width_narrow.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 639px)" />
+<link href="../../layout/tw/css/width_wide.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 640px) and (max-width: 1023px)" />
+<link href="../../layout/tw/css/width_desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" />
+
+<!-- 列印 -->
+<link href="../../layout/tw/css/print.css" rel="stylesheet" type="text/css" media="print" />
+ 
+<!-- InstanceBeginEditable name="head_js" -->
+<script src="../../js/jquery.datepicker.min.js"></script>
+<script>
+    $(function() {
+        //datepicker中文檔
+        $.datepicker.regional['locale'] = {
+            dayNames: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+            dayNamesShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+            dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+            monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+            monthNamesShort: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+            prevText: '上個月',
+            nextText: '下個月',
+            weekHeader: '週',
+            showMonthAfterYear: true,
+            yearSuffix: '年',
+            dateFormat: 'yy-mm-dd'
+        };
+        $.datepicker.setDefaults($.datepicker.regional['locale']);
+        $("input.dev-calendar").datepicker({
+            //可使用下拉式選單 - 月份
+            changeMonth: true,
+            //可使用下拉式選單 - 年份
+            changeYear: true,
+            onSelect: function (dateText, event) {
+                $('#' + event.id).trigger('focusout');
+            }
+        });
+
+    });
+</script>
+
+<script>
+$(function() {  
+    $('.print, .share').hide() //這一行是為了隱藏友善列印及社群分享(列表頁不須出現)，套程式時請刪除此行
+    $('.font_size').addClass('test'); //模擬列印與分享隱藏時，文字大小區塊調整間距，套程式時請刪除此行
+});
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!--Wrap start ========-->
+<div id="Wrap">
+    <!-- Header start -->
+    <header id="Header"><div>
+        <h1 class="logo"><a href="../../index.html" title="高雄經站Kaohsiung Index"><img src="../../layout/tw/images/logo.png" alt="高雄經站Kaohsiung Index"></a></h1>
+
+        <!-- 漢堡選單 -->
+        <div class="Menubar"><span></span></div> 
+        <div class="mobileMenuWrap">
+            <div class="mobileMenu"><div class="scrollWrap">
+                <div class="tt">Menu</div> 
+                <div class="mob_search">
+                    <div class="text"><input type="text" placeholder="Search" value=""/></div>
+                    <div class="btn">
+                        <input type="button" value="搜尋" class="btn" title="搜尋" onclick="javascript:window.location.href ='content/tw/search_result.html'"/>
+                        <span class="icon"></span>
+                    </div>
+                </div>  
+                <ul class="menu">
+                    <li><a href="news_list.html">最新消息</a></li> 
+                    <li><a href="economy_01.html">產經最前線</a></li> 
+                    <li><a href="javascript:void(0);">產經面面觀</a>
+                        <ul>
+                            <li><a href="expert_list.html">專家看高雄</a></li>
+                            <!-- <li><a href="">智慧城市，高雄好YOUNG！</a></li> -->
+                        </ul>
+                    </li>  
+                    <li><a href="javascript:void(0);">產經雲端服務</a>
+                        <ul>
+                            <li><a href="link_01.html">統計資訊前哨站</a></li>
+                            <li><a href="link_02.html">高雄市政好站</a></li>
+                            <li><a href="download_list.html">檔案下載專區</a></li>
+                        </ul>
+                    </li>                                                                                                  
+                </ul>     
+            </div></div>   
+        </div>
+
+        <!-- 桌機版選單 -->
+        <nav id="Menu" class="menu_top"><div>
+            <ul>
+                <li><a href="news_list.html">最新消息</a></li> 
+                <li><a href="economy_01.html">產經最前線</a></li> 
+                <li><a href="javascript:void(0);">產經面面觀</a>
+                    <ul>
+                        <li><a href="expert_list.html">專家看高雄</a></li>
+                        <!-- <li><a href="">智慧城市，高雄好YOUNG！</a></li> -->
+                    </ul>
+                </li>  
+                <li><a href="javascript:void(0);">產經雲端服務</a>
+                    <ul>
+                        <li><a href="link_01.html">統計資訊前哨站</a></li>
+                        <li><a href="link_02.html">高雄市政好站</a></li>
+                        <li><a href="download_list.html">檔案下載專區</a></li>
+                    </ul>
+                </li> 
+                <li class="search"><a href="javascript:void(0);"><span class="icon"></span></a>
+                    <ul>
+                        <li>
+                            <div class="header_search">
+                                <div class="text"><input type="text" placeholder="Search" /></div>
+                                <div class="btn"><input type="button" value="搜尋" title="搜尋" onclick="javascript:window.location.href ='content/tw/search_result.html'" /><span class="icon"></span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>                       
+            </ul>
+        </div></nav>     
+    </div></header><!-- Header end -->
+    
+    <!--Center-->
+	<div id="Center" class="content"><div> 
+        <div class="ToolBar"><div>
+            <div class="colm_left"><a href="javascript:void(0);" onclick="javascript:window.history.go(-1);" title="回上一頁" class="return"><span></span>回上一頁</a> <a href="javascript:void(0);" onclick="javascript:window.print();" onkeypress="javascript:window.print();" title="列印此頁(若連結無法使用，請改用鍵盤Ctrl+P鍵亦可列印)" class="print"><span></span>友善列印</a> </div>
+            <div class="colm_right">
+                <dl class="font_size">
+                    <dt>字級：</dt>
+                    <dd class="font_small"><a href="javascript:void(0)" title="小字級">小字級</a></dd>
+                    <dd class="font_medium"><a href="javascript:void(0)" title="中字級">中字級</a></dd>
+                    <dd class="font_big"><a href="javascript:void(0)" title="大字級">大字級</a></dd>
+                    <noscript class="noscript">
+                    若您無法使用字級縮放功能，請改用鍵盤"Ctrl"+"加號鍵"或"Ctrl"+"減號鍵"，來放大或縮小字級
+                    </noscript>
+                </dl>
+                <dl class="share">
+                    <dt>分享：</dt>
+                    <dd class="facebook"><a title="分享到Facebook(開新視窗)" href="https://www.facebook.com/sharer/sharer.php?u=網址" target="_blank">分享到Facebook</a></dd>
+                    <dd class="twitter"><a title="分享到Twitter(開新視窗)" href="https://twitter.com/intent/tweet?url=網址&amp;text=標題" target="_blank">分享到Twitter</a></dd>
+                    <dd class="line"><a title="分享到Line(開新視窗)" href="" target="_blank">分享到Line</a></dd>
+                    <noscript class="noscript">
+                        當SCRIPT關閉時,請點選以下連結：
+                        <a href="https://www.facebook.com/" target="_blank" title="(開新視窗)">Facebook</a>
+                        <a href="https://twitter.com/" target="_blank" title="(開新視窗)">Twitter</a>
+                        <a href="https://line.me/" target="_blank" title="(開新視窗)">Line</a>
+                    </noscript>
+                </dl>
+            </div>                  
+          </div></div> 
+  
+        <div id="Content">    
+            <div class="PageTitle"> 
+                <h2><!-- InstanceBeginEditable name="PageTitle" -->最新消息<!-- InstanceEndEditable --></h2>
+            </div>           
+            <div id="Breadcrumbs">
+                <ul>
+                    <li><a href="../../index.html">首頁</a></li>
+                    <!-- InstanceBeginEditable name="breadcrumbs" -->
+                    <li><a href="javascript:void(0)">最新消息</a></li>
+                    <!-- InstanceEndEditable -->
+                </ul>
+            </div>                 
+            <!-- InstanceBeginEditable name="content" -->
+            <div class="ListSearch FormElmt"><div>
+                <div class="item">
+                    <div class="label">選擇類別</div>
+                    <div class="cont">
+                        <select title="全部類別" class="w200">
+                            <option>全部類別</option>
+                            <option>分類1</option>
+                            <option>分類2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">選擇日期</div>
+                    <div class="cont">
+                        <input type="text" placeholder="2020-01-01" title="開始日期" class="dev-calendar" />
+                        ~
+                        <input type="text" placeholder="2020-01-01" title="結束日期" class="dev-calendar" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">關鍵字</div>
+                    <div class="cont">
+                        <input type="text" placeholder="輸入關鍵字" title="輸入關鍵字" class="w200">
+                    </div>
+                </div>
+                <div class="BtnCommon"><div>
+                    <span><input type="submit" value="查詢"></span>
+                </div></div>
+            </div></div>
+
+            <div class="editable_content">
+                <p>高雄整體的產業形貌是以金屬加工為主，近年傳統產業努力往高值化的方向推展，如藉由高附加價值、高級金屬材料為原料，帶動金屬產業產值效益的提升，以及精密機械零件加工製造廠朝向研發航太零配件等。</p>
+            </div>
+
+            <div class="ListTable">
+                <table class="rwdTable">
+                    <tr>
+                        <th class="date">日期</th>
+                        <th class="cat">類別</th>
+                        <th class="title">標題</th>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-12</td>
+                        <td class="cat">高雄產經</td>
+                        <td class="title"><a href="news_cont.html">政府資源霧煞煞?經發局幫您整理好了!</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-11</td>
+                        <td class="cat">全球產經</td>
+                        <td class="title"><a href="news_cont.html">當前經濟情勢概況（專題：美中貿易戰下，我國外銷訂單生產配置變動）</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-10</td>
+                        <td class="cat">全球產經</td>
+                        <td class="title"><a href="news_cont.html">推動轉型總是卡?高市交流論壇邀標竿企業解惑</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-09</td>
+                        <td class="cat">全球產經</td>
+                        <td class="title"><a href="news_cont.html">奧國專家認為歐元兌美元持續升值，歐盟或將為新冠疫情亂局之贏家</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-08</td>
+                        <td class="cat">全球產經</td>
+                        <td class="title"><a href="news_cont.html">人民幣兌美元匯率處於7個月以來高點附近</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-07</td>
+                        <td class="cat">高雄產經</td>
+                        <td class="title"><a href="news_cont.html">高雄市產經情勢季報(109年Q1)上線</a></td>
+                    </tr>                 
+                    <tr>
+                        <td class="date">2020-08-06</td>
+                        <td class="cat">活動訊息</td>
+                        <td class="title"><a href="news_cont.html">「後疫時代，韌性台商新南向發展與挑戰-台商佈局東南亞之經驗分享論壇」歡迎踴躍報名參加</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-05</td>
+                        <td class="cat">全球產經</td>
+                        <td class="title"><a href="news_cont.html">美國提議修改APEC數據流通規則</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-04</td>
+                        <td class="cat">高雄產經</td>
+                        <td class="title"><a href="news_cont.html">搶攻8億訂單商機 高雄自動化工業與化工儀器展開幕</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date">2020-08-03</td>
+                        <td class="cat">高雄產經</td>
+                        <td class="title"><a href="news_cont.html">推動高雄產業數位轉型 思維創新工作坊圓滿結束</a></td>
+                    </tr>         
+                </table>
+            </div>
+            
+            <!-- 頁碼 -->
+            <div id="Pagination">
+                <div class="pages">
+                    <a href="javascript:void(0)" class="first" title="第一頁">第一頁</a> 
+                    <a href="javascript:void(0)" class="prev" title="上一頁">上一頁</a> 
+                    <a href="javascript:void(0)" class="current">1/28</a> 
+                    <a href="javascript:void(0)" class="focuz">1</a> 
+                    <a href="javascript:void(0)">2</a> 
+                    <a href="javascript:void(0)">3</a> 
+                    <a href="javascript:void(0)">4</a> 
+                    <a href="javascript:void(0)">5</a> 
+                    <a href="javascript:void(0)">6</a> 
+                    <a href="javascript:void(0)">7</a> 
+                    <a href="javascript:void(0)">8</a> 
+                    <a href="javascript:void(0)">9</a> 
+                    <a href="javascript:void(0)">10</a> 
+                    <a href="javascript:void(0)" class="next" title="下一頁">下一頁</a> 
+                    <a href="javascript:void(0)" class="last" title="最後頁">最後頁</a> 
+                </div>
+                <div class="setting">共1頁/28筆,&nbsp;每頁顯示
+                    <select title="每頁顯示筆數">
+                        <option selected="selected">10</option>
+                        <option>20</option>
+                        <option>30</option>
+                    </select>
+                    筆,
+                    移至第&nbsp;
+                    <input type="text" title="移至第幾頁"/>
+                    &nbsp;頁
+                    <input type="button" value="確定" />
+                </div>
+            </div>
+			<!-- InstanceEndEditable --> 
+         </div> 
+    </div></div><!--id="Center" END-->
+    
+	<!-- InstanceBeginEditable name="popupBox" --> 
+    <!-- InstanceEndEditable --> 
+    
+    <div class="BtnTop"><a href="#" title="回最上層">TOP</a></div>
+
+    <!--Footer-->
+    <footer id="Footer">   
+        <!-- 高雄城市形象區塊 -->
+        <div class="img_content_kscity"></div>   
+        <div class="ft_info">
+            <div class="imgbox"><a href="https://www.kcg.gov.tw/Default.aspx" title="高雄市政府全球資訊網" target="_blank"><img src="../../layout/tw/images/img_footer_logo.png" alt="高雄市政府全球資訊網"></a></div>
+            <div class="contbox">
+                <div class="item">802221 高雄市苓雅區四維三路2號</div>
+                <div class="item"><span>07-3368333 #2155</span><span>topleech@gmail.com</span></div>
+                <div class="item">©版權所有 2020 <a href="https://edbkcg.kcg.gov.tw/" target="_blank" title="高雄市政府經濟發展局">高雄市政府經濟發展局</a></div>   
+            </div>
+        </div>
+    </footer>
+ 
+<!--下列css及網頁大集合連結為測試資料,套程式時請刪除-->
+    <div class="ifun_text_menu">
+        <ul>
+            <li><a href="">Menu</a>
+                <ul>
+                    <li><a href="../../index.html">首頁</a></li>
+                    <li><a href="news_cont.html">單篇</a></li>
+                    <li><a href="news_list.html">文字列表</a></li>         
+                    <li><a href="pic_list.html">圖文列表</a></li>
+                    <li><a href="expert_list.html">專家看高雄-列表</a></li>
+                    <li><a href="expert_cont.html">專家看高雄-內容</a></li>
+                    <li><a href="economy_01.html">產經最前線-物價概況</a></li>
+                    <li><a href="economy_02.html">產經最前線-投資概況</a></li>
+                    <li><a href="link_01.html">相關連結-統計資訊前哨站</a></li>
+                    <li><a href="link_02.html">相關連結-高雄市政好站</a></li>
+                    <li><a href="download_list.html">檔案下載專區</a></li>
+                    <li><a href="search_result.html">搜尋結果</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<!--網頁大集合end-->
+
+</div><!--Wrap end========-->
+</body>
+<!-- InstanceEnd --></html>
