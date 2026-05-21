@@ -1,0 +1,34 @@
+
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 70" style="enable-background:new 0 0 400 70;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#040000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="XMLID_1939_">
+	<g id="XMLID_1954_">
+		<line id="XMLID_1957_" class="st0" x1="11.2" y1="7.2" x2="11.1" y2="63.9"/>
+		<line id="XMLID_1956_" class="st0" x1="33.1" y1="7.2" x2="11.1" y2="39.5"/>
+		<line id="XMLID_1955_" class="st0" x1="17.8" y1="29.7" x2="34.4" y2="64"/>
+	</g>
+	<g id="XMLID_1951_">
+		<polyline id="XMLID_1953_" class="st0" points="51.3,64 64.2,7.3 77,64 		"/>
+		<line id="XMLID_1952_" class="st0" x1="54.5" y1="49.8" x2="73.8" y2="49.9"/>
+	</g>
+	<path id="XMLID_1950_" class="st0" d="M108.5,65.3L108.5,65.3c-6.1,0-11.1-5-11.1-11.1l0-37c0-6.1,5-11.1,11.1-11.1l0,0
+		c6.1,0,11.1,5,11.1,11.1l0,37C119.6,60.4,114.7,65.3,108.5,65.3z"/>
+	<g id="XMLID_1946_">
+		<line id="XMLID_1949_" class="st0" x1="146.8" y1="7.4" x2="146.7" y2="63.6"/>
+		<line id="XMLID_1948_" class="st0" x1="167.9" y1="7.4" x2="167.8" y2="63.6"/>
+		<line id="XMLID_1947_" class="st0" x1="147.5" y1="35.5" x2="166.8" y2="35.5"/>
+	</g>
+	<path id="XMLID_1945_" class="st0" d="M214,19.6c0-6.7-4.9-12.1-10.9-12.1c-6,0-10.9,5.4-10.9,12.1c0,3.8,1.6,7.3,4.1,9.5L210,40.5
+		c0,0,3.1,2.4,4.7,7.5c0.7,2.4,0.4,5.6-0.3,8.1c-1.7,6-8,9.4-14.2,7.5c-6.2-1.8-9.9-8.2-8.2-14.2"/>
+	<line id="XMLID_1944_" class="st0" x1="239.9" y1="7.5" x2="239.8" y2="63.7"/>
+	<path id="XMLID_1943_" class="st0" d="M290,7.6L290,52.3c0,5.9-4.8,10.6-10.6,10.6l-1,0c-5.9,0-10.6-4.8-10.6-10.6l0.1-44.7"/>
+	<polyline id="XMLID_1942_" class="st0" points="318,63.8 318.1,7.7 340.1,64.4 340.2,7.7 	"/>
+	<g id="XMLID_1940_">
+		<path id="XMLID_1941_" class="st0" d="M388.7,24.6l0-6.3c0-5.9-4.7-10.6-10.6-10.6l-1,0c-5.9,0-10.6,4.7-10.6,10.6l0,35.5
+			c0,5.9,4.7,10.6,10.6,10.6l1,0c5.9,0,10.6-4.7,10.6-10.6l0-15.1l-10.3,0"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* CSS Document */
+/*----------------------------------------------------------------------*/
+/* 公用區塊 */
+/* 標題 */
+.indexBlock .titleBox .title{ letter-spacing: 0.2em; }
+.indexBlock .titleBox .title h2{ font-weight: 300; }
+.indexBlock .titleBox .subtitle{ font-weight: 300; }
+.indexBlock .titleBox .subtitle span{ display: inline-block; vertical-align: middle; }
+.indexBlock .titleBox .subtitle .light{ font-family: 'Barlow Condensed', sans-serif; margin-left: 8px; font-weight: 400; }
+.indexBlock .titleBox .icon img{ max-width: 100%; max-height: 100%; }
+
+/* 數值 */
+.indexBlock span.data{ font-weight: 400; font-family: 'Barlow Condensed', sans-serif; color: #00b4c4; }
+.indexBlock span.percent{ font-weight: 500; font-family: 'Barlow Condensed', sans-serif; color: #00b4c4; }
+.indexBlock .titleBox .amount .count_big{ letter-spacing: 0; font-family: 'Barlow Condensed', sans-serif;  }
+.indexBlock .amount .percent{ font-family: 'Barlow Condensed', sans-serif; font-weight: 500; letter-spacing: 0; }
+.color-blue{ color: #00b4c4; }
+
+/* 文字漸層 */
+.font-gradual-color{
+    color: #00b4c4; 
+    background-image: -webkit-linear-gradient(90deg,#38c9a9 30%, #28b7e0 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 線條 */
+.line{ 
+    background-color: #000000; 
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    transition: all 1s ease; 
+}
+.line.line-run-up{ width: 0; height: 1px; 
+    /*transition-delay: 0.6s;*/
+    transform-origin: left center;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.line_wrap{ position: relative; }
+.line_wrap .line{ height: 0; width: 1px; top: 0; position: absolute; 
+    -webkit-transition: all 2.5s ease; 
+    -moz-transition: all 2.5s ease; 
+    transition: all 2.5s ease; 
+}
+.line_wrap .line.line-run-left-down{ 
+    transform-origin: left top; left: 45%;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+.line_wrap .line.line-run-right-down{ 
+    transform-origin: right top; right: 45%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+/* avtive */
+.line.line-run-up.active{ width: 100%; }
+.line_wrap .line.active{ height: 1100px; }
+
+/*文字線條*/
+.font_line .svg path, .font_line .svg polyline, .font_line .svg line{ 
+    fill:none; stroke:#000000; stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10; 
+}
+
+/*----------------------------------------------------------------------*/
+/* index_fixed_btn 右側固定按鈕 */
+.index_fixed_btn{ position: fixed; z-index: 999; }
+.index_fixed_btn a{ display: block; font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400; text-transform: uppercase; position: relative;
+}
+.index_fixed_btn span{ vertical-align: middle;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+.index_fixed_btn a:hover .tt{ color: #000000; }
+.index_fixed_btn .img{ background-size: contain; }
+.index_fixed_btn .global .img{ background-image: url(../images/fixed_btn_global.png); }
+.index_fixed_btn .taiwan .img{ background-image: url(../images/fixed_btn_taiwan.png); }
+.index_fixed_btn .kaohsiung .img{ background-image: url(../images/fixed_btn_kaohsiung.png); }
+.index_fixed_btn .global:hover .img{ background-image: url(../images/fixed_btn_global_hover.png); }
+.index_fixed_btn .taiwan:hover .img{ background-image: url(../images/fixed_btn_taiwan_hover.png); }
+.index_fixed_btn .kaohsiung:hover .img{ background-image: url(../images/fixed_btn_kaohsiung_hover.png); }
+.index_fixed_btn .current.global .img{ background-image: url(../images/fixed_btn_global_hover.png); }
+.index_fixed_btn .current.taiwan .img{ background-image: url(../images/fixed_btn_taiwan_hover.png); }
+.index_fixed_btn .current.kaohsiung .img{ background-image: url(../images/fixed_btn_kaohsiung_hover.png); }
+
+/*----------------------------------------------------------------------*/
+/* 全球經濟情勢 */
+.IndexGlobal .Main_TOP::after{ content: ""; display: block; clear: both; }
+.IndexGlobal .Main_TOP .imgBox{ position: relative; }
+.IndexGlobal .Main_TOP .imgBox .img{ width: 100%; max-width: 1100px; position: absolute; top: 0; left: 0; }
+.IndexGlobal .Main_TOP .imgBox .img img{ max-height: 100%; max-width: 100%; }
+.IndexGlobal .titleBox{ overflow: hidden; }
+.IndexGlobal .titleBox .amount > div{ display: inline-block;  }
+.IndexGlobal .Content_Box .cont_title{ font-weight: 300; text-align: center; padding-left: 10px; padding-right: 10px; }
+
+.IndexGlobal .data_line_bar{ position: relative }
+.IndexGlobal .data_line_bar .line{ position: absolute; left: 0; }
+.IndexGlobal .data_line_bar .cont{ width: 100%; }
+.IndexGlobal .data_line_bar .cont > div{ max-width: 1250px; margin: auto; display: flex; flex-wrap: wrap; }
+.IndexGlobal .data_line_bar .item{ flex: 0 1 auto; width: 50%; text-align: center; 
+    font-weight: 300; position: relative; box-sizing: border-box;
+}
+.IndexGlobal .data_line_bar .item::before, .IndexGlobal .data_line_bar .item::after{ position: absolute; 
+    content: ""; display: inline-block; background-color: #000000; top: 3px; left:50%;
+}
+.IndexGlobal .data_line_bar .item::before{ width: 7px; height: 7px; margin-left: -3px;
+    border-radius: 50%;-webkit-border-radius: 50%; -moz-border-radius: 50%;
+}
+.IndexGlobal .data_line_bar .item::after{ width: 1px; height: 18px; top: 10px; }
+.IndexGlobal .data_line_bar .item .amount{ color: #00b4c4; }
+.IndexGlobal .data_line_bar .item .data{ font-weight: 400; }
+.IndexGlobal .data_line_bar .remark{ color: #777777; font-weight: 300; }
+
+.IndexGlobal .data_col_box{ display: flex; flex-wrap: wrap; max-width: 1250px; margin: auto; }
+.IndexGlobal .data_col_box .item{ display: table; flex: 0 1 auto; width: 33.3333333%; 
+    text-align: center;  position: relative;
+}
+.IndexGlobal .data_col_box .item:nth-child(1){ top: 80px; }
+.IndexGlobal .data_col_box .item:nth-child(2){ top: 40px; }
+.IndexGlobal .data_col_box .item > div{ border: 1px solid #000000; 
+    display: table-cell; vertical-align: middle; padding-left: 10px; padding-right: 10px; 
+}
+.IndexGlobal .data_col_box .tt{ font-weight: 300; }
+.IndexGlobal .data_col_box .tt .data{ color: #00b4c4; font-family: 'Barlow Condensed', sans-serif; }
+.IndexGlobal .data_col_box .remark{ color: #777777; font-weight: 300; }
+
+/*----------------------------------------------------------------------*/
+/* 臺灣經濟情勢 */
+.IndexTaiwan::after{  content: ""; display: block; clear: both;  }
+.IndexTaiwan .Main_TOP{ overflow: hidden; }
+.IndexTaiwan .Main_TOP::after{ content: ""; display: block; clear: both; }
+.IndexTaiwan .Main_TOP > div{ max-width: 1470px; margin: auto; }
+.IndexTaiwan .titleBox .subtitle{ font-weight: 400; }
+.IndexTaiwan .titleBox .amount .text{ font-weight: 300; }
+.IndexTaiwan .titleBox .amount .item > div{ display: inline-block; }
+.IndexTaiwan .Content_Box .cont_title{ font-weight: 300; text-align: center; padding-left: 10px; padding-right: 10px; }
+.IndexTaiwan .Content_Box .cont_title .sub{ display: block; }
+.IndexTaiwan .Main_TOP .imgBox{ position: relative; overflow: hidden; }
+
+.IndexTaiwan .data_line_bar{ position: relative; }
+.IndexTaiwan .data_line_bar .line{ position: absolute; left: 0; top: 40px; }
+.IndexTaiwan .data_line_bar .cont{ display: flex; flex-wrap: wrap; max-width: 1360px; margin: auto; }
+.IndexTaiwan .data_line_bar .item{ flex: 0 1 auto; width: 33.3333333%; text-align: center; 
+    padding-top: 30px; font-weight: 300; position: relative; 
+}
+.IndexTaiwan .data_line_bar .item::before, .IndexTaiwan .data_line_bar .item::after{ position: absolute; 
+    content: ""; display: inline-block; background-color: #000000; top: 3px; left:50%;
+}
+.IndexTaiwan .data_line_bar .item::before{ width: 7px; height: 7px; margin-left: -3px;
+    border-radius: 50%;-webkit-border-radius: 50%; -moz-border-radius: 50%;
+}
+.IndexTaiwan .data_line_bar .item::after{ width: 1px; height: 18px; top: 10px; }
+.IndexTaiwan .data_line_bar .item .amount{ color: #00b4c4; }
+.IndexTaiwan .data_line_bar .item .data{ font-weight: 400; }
+.IndexTaiwan .data_line_bar .item .remark{ color: #777777; }
+
+.IndexTaiwan .data_col_title .title{ font-weight: 300; }
+.IndexTaiwan .data_col_title .title .sub{ display: block; }
+.IndexTaiwan .data_col_title .img img{ max-width: 100%; max-height: 100%; }
+.IndexTaiwan .data_col_list { font-weight: 300; padding-bottom: 30px; overflow: hidden; }
+.IndexTaiwan .data_col_list .item{ position: relative; border-bottom: 1px solid #000000; padding: 5px 15px; margin-bottom: 15px; }
+.IndexTaiwan .data_col_list .item::before{ content: ""; display: block; width: 9px; height: 9px; 
+    background-color: #000000; position: absolute; bottom: -5px; left: 0;
+    border-radius: 50%;-webkit-border-radius: 50%; -moz-border-radius: 50%;
+}
+.IndexTaiwan .data_col_list .item:nth-child(2){ margin-left: 10%; }
+.IndexTaiwan .data_col_list .item:nth-child(3){ margin-left: 20%; }
+.IndexTaiwan .data_col_list .item:nth-child(4){ margin-left: 30%; }
+.IndexTaiwan .data_col_list .item > div{ display: inline-block; }
+.IndexTaiwan .data_col_list .tt{ margin-right: 5px; }
+.IndexTaiwan .data_col_list .data{ color: #00b4c4; }
+.IndexTaiwan .data_col_list .data span{ font-weight: 400; font-family: 'Barlow Condensed', sans-serif; }
+.IndexTaiwan .data_col_list .remark{ color: #777777; }
+
+/* svg */
+#svg_taiwan .svg-bg path{ opacity:0.15; fill:url(#bg-gradient); enable-background:new; }
+#svg_taiwan .svg-bg .color_01{ stop-color:#28B7E0; }
+#svg_taiwan .svg-bg .color_02{ stop-color:#37C8AC; }
+#svg_taiwan .svg-bg .color_03{ stop-color:#38C9A9; }
+#svg_taiwan .st1{fill:none;stroke:#000000; stroke-miterlimit:10;}
+#svg_taiwan .st2{fill:none;stroke:#000000; stroke-linecap:round;stroke-linejoin:round;}
+#svg_taiwan .st3{fill:none;stroke:#000000; stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7.9304,7.9304;}
+#svg_taiwan .st4{fill:none;stroke:#000000; stroke-miterlimit:10;stroke-dasharray:10.0052,10.0052; }
+#svg_taiwan .st5{fill:none;stroke:#000000; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+#svg_taiwan .st6{fill:none;stroke:#000000; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+#svg_taiwan .st7{fill:none;stroke:#000000; stroke-linecap:round;stroke-miterlimit:10;}
+
+
+/*----------------------------------------------------------------------*/
+/* 高雄經濟情勢 */
+.IndexKaohsiung{ overflow: hidden; padding-top: 30px; }
+.IndexKaohsiung .Main_TOP .titleBox{ text-align: center; }
+.IndexKaohsiung .titleBox .icon{ margin: auto; }
+
+.IndexKaohsiung .subtitleBox{ font-weight: 300; text-align: center; }
+.IndexKaohsiung .subtitleBox .title .sub{ display: block; }
+.IndexKaohsiung .subtitleBox .amount{ font-weight: 400; font-family: 'Barlow Condensed', sans-serif; }
+
+.industry_box{ font-weight: 300; text-align: center;}
+.industry_box::after{ content: ""; display: block; clear: both; }
+.industry_box .industry_tt { margin-bottom: 20px; }
+.industry_box .industry_tt .sub{ display: block; }
+
+.industry_box .itembox .amount{ color: #00b4c4; }
+.industry_box .itembox .amount .data{ font-weight: 400; }
+.industry_box .itembox .remark{ color: #777777; }
+
+.employ_title{ letter-spacing: 0.08em; text-align: center; font-weight: 300; }
+.employ_title span{ display: block; }
+
+.employ_cont{ text-align: center; }
+.employ_cont .item{ display: inline-block; font-weight: 300; }
+.employ_cont .item.item_img{ padding-left: 40px; padding-right: 40px; }
+.employ_cont .item .amount{ color: #00b4c4; }
+.employ_cont .item .amount .data{ font-weight: 400; }
+.employ_cont .item .remark{ color: #777777; }
+
+#svg_employ .light line{ fill:none; stroke:#000000; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:10; }
+
+/* svg */
+.IndexKaohsiung .imgBox{ position: relative; }
+.IndexKaohsiung .imgBox .svg{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+#svg_kaohsiung .st0{ fill:none;stroke:#000000;stroke-linejoin:round;stroke-miterlimit:10;}
+#svg_kaohsiung .st1{ fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+#svg_kaohsiung .st2{ fill:#231815;}
+#svg_kaohsiung .st3{ fill:none;stroke:#231815;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+#svg_kaohsiung .st4{ fill:none;stroke:#231815;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+#svg_kaohsiung .st5{ fill:#FFFFFF;}
+#svg_kaohsiung .st6{ opacity:0.15; fill:url(#bg-gradient); enable-background:new; }
+#svg_kaohsiung .svg-bg path{ opacity:0.15; fill:url(#bg-gradient); enable-background:new; }
+#svg_kaohsiung .svg-bg .color_01{ stop-color:#28B7E0; }
+#svg_kaohsiung .svg-bg .color_02{ stop-color:#38C9A9; }
+
+/* 高雄城市形象區塊 */
+#svg_kaohsiung_city{ z-index: 99; width: 100%; height: 300px; position: absolute; top: 0; left: 0; }
+#svg_kaohsiung_city .st0{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+#svg_kaohsiung_city .st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;}
+#svg_kaohsiung_city .st2{fill:none;}
+#svg_kaohsiung_city .st3{fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:10;}
+#svg_kaohsiung_city .st4{fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-miterlimit:10;}
+
+#svg_kaohsiung_city .svg-rail-tram{ display: none; }
+
+.svg_railtram{ z-index: 99; }
+#svg_railtram{ z-index: 99; width: 100%; height: 300px; position: absolute; top: 0; left: 0; }
+#svg_railtram path, #svg_railtram polyline, #svg_railtram line{ 
+    fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10; 
+}
+.img_kscity_wrap{ position: relative; width: 100%; }
+.img_kscity_wrap .bg_city_color{ 
+    position: absolute; top:0; left: 0; width: 100%; z-index: 0;
+    /*background: url(../images/bg_city_color.jpg) no-repeat center center;
+    background-size: cover;*/
+}
+.img_kscity_wrap .bg_city_color img{ max-width: 100%; max-height: 100%; }
+
+.city_name { margin:0 auto; font-size: 20px; text-align: center; letter-spacing: 0.2em;
+    font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; 
+    position: relative; z-index: 999;
+}
+#svg_city_name{ position: relative; display:black; overflow: visible; z-index: 100;
+    -webkit-text-shadow: 0 0 1em rgba(0,180,196,0.9);
+    -moz-text-shadow: 0 0 1em rgba(0,180,196,0.9);
+    text-shadow: 0 0 1em rgba(0,180,196,0.9);
+}
+#svg_city_name path{ stroke:#000000; fill: none; }
+
+/*----------------------------------------------------------------------*/
+/* 動畫樣式設定 */
+
+/* SVG-台灣主視覺 */
+.active #svg_taiwan .svg-focus-tw{ 
+  animation: bounce; 
+  animation-duration: 1s; 
+  transform-origin: center center;
+  animation-name: opacity;
+}
+.active #svg_taiwan .tw_flag{ 
+    animation: headShake; 
+    animation-duration: 0.5s;
+    animation-delay:1s;
+    transform-origin: center center;
+}
+.active #svg_taiwan .tw_name{ 
+    animation: jello; 
+    animation-duration: 1s;
+    animation-delay:1.2s;
+    transform-origin: center center;
+}
+.active #svg_taiwan .svg-bg{ 
+    animation: zoomInDown; 
+    animation-duration: 1.2s;
+    transform-origin: center center;
+}
+.active #svg_taiwan .svg-around{
+    animation: zoomIn; 
+    animation-duration: 0.5s;
+    transform-origin: center center;
+}
+.active #svg_taiwan .svg-circle{
+    animation: zoomIn; 
+    animation-duration:1s;
+    transform-origin: center center;
+}
+
+/* SVG-高雄主視覺 */
+.active #svg_kaohsiung .svg-bg{
+    animation: fadeInRight; 
+    animation-duration: 1.2s;
+    transform-origin: center center; 
+}
+.active #svg_kaohsiung .svg-light.light01{ animation-delay: 0.3s }
+.active #svg_kaohsiung .svg-light.light02{ animation-delay: 0.5s }
+.active #svg_kaohsiung .svg-light.light03{ animation-delay: 0.7s }
+.active #svg_kaohsiung .svg-light.light04{ animation-delay: 0.4s }
+.active #svg_kaohsiung .svg-ks-font{ 
+    animation: fadeInRight; 
+    animation-duration: 1s;
+    transform-origin: center center; 
+}
+
+/*---------------------------------------------*/
+@keyframes opacity { 
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }  
+}
+

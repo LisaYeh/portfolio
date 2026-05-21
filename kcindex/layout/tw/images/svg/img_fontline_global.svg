@@ -1,0 +1,24 @@
+<svg id="global" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 70" style="enable-background:new 0 0 260 70;">
+	<style type="text/css">
+		.st0{fill:none;stroke:#040000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+		.st1{fill:none;stroke:#231815;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	</style>
+	<g id="XMLID_1909_">
+		<g id="XMLID_1922_">
+			<path id="XMLID_1923_" class="st0" d="M27.9,23.3v-4.8c0-6-4.9-10.9-10.9-11l0,0c-6,0-10.9,4.9-11,10.9l0,34.5
+				c0,6,4.9,10.9,10.9,11l0,0c6,0,10.9-4.9,11-10.9l0-15.2H19"/>
+		</g>
+		<polyline id="XMLID_1921_" class="st0" points="54.9,7.5 54.9,62.9 76,62.9 	"/>
+		<path id="XMLID_1920_" class="st0" d="M107.4,64.9L107.4,64.9c-6,0-10.9-4.9-10.9-11l0-36.5c0-6,4.9-10.9,11-10.9l0,0
+			c6,0,10.9,4.9,10.9,11l0,36.5C118.3,60,113.4,64.9,107.4,64.9z"/>
+		<path id="XMLID_1919_" class="st0" d="M145.3,34.5h9.9c7.5,0,13.5,6.3,13.5,14.2l0,0c0,7.8-6.1,14.2-13.5,14.2h-9.9l0-55.3h9.9
+			c7.5,0,13.5,6.1,13.5,13.5l0,0c0,6.2-4.2,11.4-9.8,13l-1.9,0.5"/>
+		<g id="XMLID_1916_">
+			<polyline id="XMLID_1918_" class="st1" points="186.6,63.4 199.6,7.9 212.7,63.3"/>
+			<line id="XMLID_1917_" class="st1" x1="189.4" y1="51.4" x2="209.1" y2="51.3"/>
+		</g>
+		<g id="XMLID_1913_">
+			<polyline id="XMLID_1915_" class="st0" points="234.6,7.5 234.6,62.8 255.7,62.8"/>
+		</g>
+	</g>
+</svg>
