@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------------------------------------*/
+/*共用的隱藏*/
+#MenuMobile, #nav, #Menu, #Header, #Footer, #Copyright, #KeyVisual, .switch, #Breadcrumbs, .ToolBar, .ListSearch, #Pagination, 
+.BtnTop, .MsgModule_Media, iframe[allowfullscreen], .editable_content .img_bg span, #colorbox_thum, h4.ext_title, .ext_list,
+.BtnCommon, .inPagination, .prevNextLink, .related_articles, .media 
+{ 
+	display:none !important; 
+}
+	
+#Center, #Content { width:100%; float:none; padding:0; }
+#Content { font-size:81.25% !important; }
+	
+.editable_content .img_bg { border:1px solid #fff; }/* 修正文繞圖的bug */
+.editable_content .imgleft, .editable_content .imgright { max-width:30%; }
+
+/* 文字列表及表單的框線設定 */
+.ListTable, .FormTable table, table.table_style1, table.table_style2 {
+	border-right:1px solid #CCC !important;
+	border-top:1px solid #CCC !important;
+	border-left:0 !important;
+	border-bottom:0 !important;
+}
+.ListTable th, .ListTable td, .FormTable table th, .FormTable table td, table.table_style1 th, table.table_style1 td, table.table_style2 th, table.table_style2 td {
+	border-left:1px solid #CCC !important;
+	border-bottom:1px solid #CCC !important;
+	border-right:0 !important;
+	border-top:0 !important;
+}
+
+#Center, #Content { border:none; padding:0px; }
+
+.ListPicText .item{ margin-bottom:15px;}
+.ListPicText .item .img, .ListPicText .item .btn, .p_intro #img_popup a span{ display:none; }
+.ListPicText .item .img > div{ display:none; }
+.ListPicText .item{ height:auto !important;}
+
+.editable_content .table_style2{ min-width:inherit; width:100%;}

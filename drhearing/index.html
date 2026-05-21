@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-language" content="zh-Hant-TW" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>首頁-博士助聽器</title>
+<link rel="shortcut icon" href="layout/tw/images/favicon.ico" type="image/x-icon"/>
+<link href="layout/tw/css/style.css" rel="stylesheet" type="text/css" />
+<link href="layout/tw/css/jquery.mmenu.css" rel="stylesheet" type="text/css" />
+<link href="layout/tw/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="layout/tw/css/index.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/jquery-iifun.js"></script>
+<script src="js/jquery.mmenu.min.all.js"></script>
+
+<script>
+$(function() {
+    $('#MenuMobile').mmenu();
+});
+</script>
+
+<link href="layout/tw/css/width_narrow.css" rel="stylesheet" type="text/css" media="only screen and (max-width: 639px)" />
+<link href="layout/tw/css/width_wide.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 640px) and (max-width: 1023px)" />
+<link href="layout/tw/css/width_desktop.css" rel="stylesheet" type="text/css" media="only screen and (min-width: 1024px)" />
+<!--[if IE 9]>
+<link href="layout/tw/css/ie9_fix.css" rel="stylesheet" type="text/css" /><![endif]--><!-- css for IE9 -->
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+$(window).load(function(){
+    //主視覺   
+    $('.bxSlider_list').each(function(){
+        if ($(this).find('li').length > 1) {
+            $(this).bxSlider({
+                mode: 'horizontal',
+                auto: true,
+                nextText: '下一頁',
+                prevText: '上一頁',
+                useCSS: false
+            });
+        }
+    });
+    $('.bxSlider_list').addClass('show')
+});
+
+$(document).ready(function(){   
+    //商品輪播
+    $(".product_list.owl-carousel").owlCarousel({
+        rewind: true,
+        nav: true,
+        dots: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 2
+          },
+          768: {
+            items: 3
+          },
+          1024: {
+            items: 4
+          }
+        }
+    });
+});
+</script>
+
+</head>
+
+<body>
+<div id="Wrap">
+    <!-- Header start -->
+    <header id="Header"><div>
+        <h1 class="logo"><a href="index.html" title="博士助聽器 Dr. Hearing Group"><img src="layout/tw/images/logo.png" alt="博士助聽器 Dr. Hearing Group"></a></h1>
+
+        <!-- desktop menu-->
+        <nav id="Menu"><div>
+            <ul>
+                <li><a href="">關於博士</a></li>                             
+                <li><a href="content/tw/news_list.html">最新消息</a>
+                    <ul>
+                        <li><a href="">學術研討會</a></li>
+                        <li><a href="">活動消息</a></li>
+                        <li><a href="">產品新知</a></li>
+                    </ul>
+                </li>                             
+                <li><a href="">全國門市</a></li>                             
+                <li><a href="">產品介紹</a>
+                    <ul>
+                        <li><a href="">助聽器</a>
+                            <ul>
+                                <li><a href="">商品1-1</a></li>
+                                <li><a href="">商品1-2</a></li>
+                                <li><a href="">商品1-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">FM調頻系統</a></li>
+                        <li><a href="">數位無線系統</a></li>
+                        <li><a href="">周邊輔具</a></li>
+                        <li><a href="">耳模資訊</a></li>
+                    </ul>
+                </li>                             
+                <li><a href="">影音專區</a>
+                    <ul>
+                        <li><a href="">聽力保健</a></li>
+                        <li><a href="">認識助聽器</a></li>
+                        <li><a href="">其他</a></li>
+                    </ul>
+                </li>                             
+                <li><a href="">聽友分享</a></li>                             
+                <li><a href="">聽力專欄</a></li>  
+                <li><a href="">社會福利</a></li>  
+                <li><a href="">相關連結</a>
+                    <ul>
+                        <li><a href="">第二層測試</a>
+                            <ul>
+                                <li><a href="">第三層測試</a></li>
+                                <li><a href="">第三層測試</a></li>
+                                <li><a href="">第三層測試</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">第二層測試</a></li>
+                    </ul>
+                </li>    
+            </ul>
+        </div></nav>
+
+        <!-- search-->
+        <div class="header_search"> 
+            <label for="">全站搜尋</label>
+            <input type="text" placeholder="SEARCH" accesskey="S" /> 
+            <div class="btn"><input type="submit" value="搜尋" title="搜尋" onclick="javascript:window.location.href ='content/tw/search_result.html'" /></div>
+        </div>        
+    </div></header><!-- Header end -->
+    
+    <!-- 輪播Banner -->
+    <div id="KeyVisual"><div>
+        <ul class="bxSlider_list">
+            <li><a href="" title="標題"><img src="layout/banner_01.jpg" alt="標題" /></a></li>
+            <li><a href="" title="標題"><img src="layout/banner_01.jpg" alt="標題" /></a></li>
+            <li><a href="" title="標題"><img src="layout/banner_01.jpg" alt="標題" /></a></li>
+        </ul>
+    </div></div>
+      
+    <!--IndexCenter start=====-->
+    <div id="Center" class="IndexCenter">
+        <!-- ========== 最新消息 start ========== -->
+        <div class="IndexBlock IndexNews"><div>
+            <div class="indexTitle"><h2>最新消息</h2><div class="subtitle">NEWS</div></div>
+            <div class="news_list">
+                <div class="item"><div>
+                    <div class="img"><a href="content/tw/news_cont.html"><div style="background-image: url(layout/img_news_01.jpg);"></div></a></div>
+                    <div class="cont">
+                        <div class="tag">活動新聞</div>
+                        <div class="title"><a href="content/tw/news_cont.html">博士助聽器響應慈善公益！</a></div>
+                        <div class="desc">
+                            博士助聽器致力於關懷國人的聽覺健康，拋磚引玉捐贈20部來自丹麥GN ReSound的高品質助聽輔具，以及10部藍牙電視音訊匯流器提供給弘道老人福利基金會，期盼能讓更多朋友一同共襄盛舉，並提升長者們的生活品質 
+                        </div>
+                        <div class="date">2020-03-16</div>       
+                    </div>
+                    <div class="more_btn"><a href="content/tw/news_cont.html">MORE</a></div>
+                </div></div>
+
+                <div class="item"><div> 
+                    <div class="img"><a href="content/tw/news_cont.html"><div style="background-image: url(layout/img_news_02.jpg);"></div></a></div>
+                    <div class="cont">
+                        <div class="tag">產品需知</div>
+                        <div class="title"><a href="content/tw/news_cont.html">RESOUND LiNX Quattro 產品發表會</a></div>
+                        <div class="desc">
+                            博士助聽器致力於關懷國人的聽覺健康，拋磚引玉捐贈20部來自丹麥GN ReSound的高品質助聽輔具，以及10部藍牙電視音訊匯流器提供給弘道老人福利基金會，期盼能讓更多朋友一同共襄盛舉，並提升長者們的生活品質                        
+                        </div>
+                        <div class="date">2020-03-16</div>       
+                    </div>
+                    <div class="more_btn"><a href="content/tw/news_cont.html">MORE</a></div>
+                </div></div>
+
+                <div class="item"><div>   
+                    <div class="img"><a href="content/tw/news_cont.html"><div style="background-image: url(layout/img_news_03.jpg);"></div></a></div>
+                    <div class="cont">
+                        <div class="tag">學術研討會</div>
+                        <div class="title"><a href="content/tw/news_cont.html">聽力學臨床實務研討會： 聽覺皮質電位檢測在助聽輔具效益評估的應用</a></div>
+                        <div class="desc">
+                            博士助聽器致力於關懷國人的聽覺健康，拋磚引玉捐贈20部來自丹麥GN ReSound的高品質助聽輔具，以及10部藍牙電視音訊匯流器提供給弘道老人福利基金會，期盼能讓更多朋友一同共襄盛舉，並提升長者們的生活品質                        
+                        </div>
+                        <div class="date">2020-03-16</div>       
+                    </div>
+                    <div class="more_btn"><a href="content/tw/news_cont.html">MORE</a></div>
+                </div></div> 
+            </div>
+            <div class="indexMoreBtn"><a href=""><span>更多最新消息</span></a></div>        
+        </div></div><!-- ========== 最新消息 end ========== -->
+
+        <!-- ========== 聽友分享 start ==========-->
+        <div class="IndexBlock IndexReviews"><div>
+            <div class="indexTitle"><h2>聽友分享</h2><div class="subtitle">REVIEWS</div></div>
+            <div class="reviews_box"><div>
+                <!-- 分享者(大) -->
+                <div class="sharer_big itemBox">
+                    <div class="img_box">
+                        <div class="info"><div>
+                            <div class="store"><span>中壢門市</span></div>
+                            <div class="name">王阿姨</div>
+                        </div></div>
+                        <!-- 人物圖片尺寸建議310px*310px -->
+                        <div class="img"><div><img src="layout/img_sharer_01.png" alt="王阿姨"></div></div>
+                    </div>
+                    <div class="cont">
+                        <div class="desc">
+                            <span><a href="">
+                            我發現聽力損失已經很久了，孝順的女兒們７、８年前就發現了，我發現聽力損失已經很久了孝順的女兒們７、８年前就發現了，我發現聽力損失已經很久了孝順的
+                            </a></span>
+                        </div>         
+                    </div>       
+                </div>
+
+                <!-- 分享者(中) -->
+                <div class="sharer_mid itemBox">
+                    <div class="item"><div>
+                        <div class="img"><div><img src="layout/img_sharer_02.jpg" alt="劉小弟"></div></div>
+                        <div class="cont">
+                            <div class="info">
+                                <div class="store">五甲門市</div>
+                                <div class="name">劉小弟</div>
+                            </div>
+                            <div class="desc">
+                                <span><a href="">
+                                我的小孩是一對雙胞胎兄弟，於２０１８年１２月在美國聖我的小孩是一對雙胞胎兄弟，於２０１８年１２月在美國聖
+                                </a></span>
+                            </div>
+                        </div>
+                    </div></div>
+
+                    <div class="item"><div>
+                        <div class="img"><div><img src="layout/img_sharer_03.jpg" alt="蔡阿姨"></div></div>
+                        <div class="cont">
+                            <div class="info">
+                                <div class="store">五甲門市</div>
+                                <div class="name">蔡阿姨</div>
+                            </div>
+                            <div class="desc">
+                                <span><a href="">
+                                我是長期配戴的使用者，上一副助聽器是在離家比較我是長期配戴的使用者，上一副助聽器是在離家比較
+                                </a></span>
+                            </div>
+                        </div>
+                    </div></div>  
+                </div>
+
+            </div></div>
+            <div class="indexMoreBtn"><a href=""><span>更多聽友分享</span></a></div>   
+        </div></div><!--========== 聽友分享 end ========== -->
+
+        <!-- ========== 產品介紹 start ==========-->
+        <div class="IndexBlock IndexProduct"><div>
+            <div class="indexTitle"><h2>產品介紹</h2><div class="subtitle">PRODUCT</div></div>
+            <div class="product_list owl-carousel">
+                <div class="item"><div>
+                    <div class="img"><a href=""><div style="background-image:url(layout/img_pro_01.jpg)"></div></a></div>          
+                    <div class="cont">
+                        <div class="brand"><a href="">Starkey</a></div>
+                        <div class="title"><a href="">Starkey Livio 1000a全新特仕版</a></div>
+                    </div>
+                    <div class="more_btn"><a href="">MORE</a></div>
+                </div></div>             
+                <div class="item"><div>
+                    <div class="img"><a href=""><div style="background-image:url(layout/img_pro_02.jpg)"></div></a></div>          
+                    <div class="cont">
+                        <div class="brand"><a href="">PHONAK</a></div>
+                        <div class="title"><a href="">CROS B 單側聽損使用者</a></div>
+                    </div>
+                    <div class="more_btn"><a href="">MORE</a></div>
+                </div></div>   
+                <div class="item"><div>
+                    <div class="img"><a href=""><div style="background-image:url(layout/img_pro_03.jpg)"></div></a></div>          
+                    <div class="cont">
+                        <div class="brand"><a href="">PHONAK</a></div>
+                        <div class="title"><a href="">Naída™ B 強力型助聽器</a></div>
+                    </div>
+                    <div class="more_btn"><a href="">MORE</a></div>
+                </div></div> 
+                <div class="item"><div>
+                    <div class="img"><a href=""><div style="background-image:url(layout/img_pro_04.jpg)"></div></a></div>          
+                    <div class="cont">
+                        <div class="brand"><a href="">Starkey</a></div>
+                        <div class="title"><a href="">Starkey Livio 1000a全新特仕版</a></div>
+                    </div>
+                    <div class="more_btn"><a href="">MORE</a></div>
+                </div></div>
+                <div class="item"><div>
+                    <div class="img"><a href=""><div style="background-image:url(layout/img_pro_03.jpg)"></div></a></div>          
+                    <div class="cont">
+                        <div class="brand"><a href="">Starkey</a></div>
+                        <div class="title"><a href="">Starkey Livio 1000a全新特仕版</a></div>
+                    </div>
+                    <div class="more_btn"><a href="">MORE</a></div>
+                </div></div> 
+                <div class="item"><div>
+                    <div class="img"><a href=""><div style="background-image:url(layout/img_pro_04.jpg)"></div></a></div>          
+                    <div class="cont">
+                        <div class="brand"><a href="">Starkey</a></div>
+                        <div class="title"><a href="">Starkey Livio 1000a全新特仕版</a></div>
+                    </div>
+                    <div class="more_btn"><a href="">MORE</a></div>
+                </div></div>
+
+            </div>
+            <div class="indexMoreBtn"><a href=""><span>更多產品介紹</span></a></div>   
+        </div></div><!--========== 產品介紹 end ========== -->
+
+        <!-- ========== 聽力專欄 start ==========-->
+        <div class="IndexColumn">
+            <div class="hearing_box titleColumn"><div>
+                <div class="indexTitle"><h2>聽力專欄</h2><div class="subtitle">COLUMN</div></div>
+            </div></div>
+            <div class="hearing_box"><div>
+                <div class="img"><a href=""><div style="background-image: url(layout/img_column_01.jpg);"></div></a></div>
+                <div class="cont"><a href="">
+                    <div class="title">助聽器是怎麼放大聲音的？</div>    
+                    <div class="desc">
+                        隨著時代變遷，助聽器的普及率與接受度逐漸升高。然而仍有些民眾對於助聽器仍抱持著敬而遠之的態度：覺得讓談話者說話時說大聲一點就好，甚至配戴就好像必須面對自己在生理上有所缺失。其實就像看不清楚時得配眼鏡輔助、牙齒耗損可以訂製假牙、聽不清楚則能選配助聽器。  
+                    </div>            
+                </a></div>   
+            </div></div>
+            <div class="hearing_box"><div>
+                <div class="img"><a href=""><div style="background-image: url(layout/img_column_02.jpg);"></div></a></div>
+                <div class="cont"><a href="">
+                    <div class="title">聽力師諮詢聽損者聆聽狀況</div>    
+                    <div class="desc">
+                        隨著時代變遷，助聽器的普及率與接受度逐漸升高。然而仍有些民眾對於助聽器仍抱持著敬而遠之的態度：覺得讓談話者說話時說大聲一點就好，甚至配戴就好像必須面對自己在生理上有所缺失。其實就像看不清楚時得配眼鏡輔助、牙齒耗損可以訂製假牙、聽不清楚則能選配助聽器。  
+                    </div>            
+                </a></div>   
+            </div></div>
+            <div class="hearing_box"><div>
+                <div class="img"><a href=""><div style="background-image: url(layout/img_column_03.jpg);"></div></a></div>
+                <div class="cont"><a href="">
+                    <div class="title">選購助聽器有補助方案？</div>    
+                    <div class="desc">
+                        隨著時代變遷，助聽器的普及率與接受度逐漸升高。然而仍有些民眾對於助聽器仍抱持著敬而遠之的態度：覺得讓談話者說話時說大聲一點就好，甚至配戴就好像必須面對自己在生理上有所缺失。其實就像看不清楚時得配眼鏡輔助、牙齒耗損可以訂製假牙、聽不清楚則能選配助聽器。  
+                    </div>            
+                </a></div>   
+            </div></div>
+            <div class="hearing_box"><div>
+                <div class="img"><a href=""><div style="background-image: url(layout/img_column_04.jpg);"></div></a></div>
+                <div class="cont"><a href="">
+                    <div class="title">助聽器的保養，你做對了嗎？</div>    
+                    <div class="desc">
+                        隨著時代變遷，助聽器的普及率與接受度逐漸升高。然而仍有些民眾對於助聽器仍抱持著敬而遠之的態度：覺得讓談話者說話時說大聲一點就好，甚至配戴就好像必須面對自己在生理上有所缺失。其實就像看不清楚時得配眼鏡輔助、牙齒耗損可以訂製假牙、聽不清楚則能選配助聽器。  
+                    </div>            
+                </a></div>   
+            </div></div>   
+            <div class="hearing_box"><div>
+                <div class="img"><a href=""><div style="background-image: url(layout/img_column_05.jpg);"></div></a></div>
+                <div class="cont"><a href="">
+                    <div class="title">配戴助聽器對生活的影響與改變</div>    
+                    <div class="desc">
+                        隨著時代變遷，助聽器的普及率與接受度逐漸升高。然而仍有些民眾對於助聽器仍抱持著敬而遠之的態度：覺得讓談話者說話時說大聲一點就好，甚至配戴就好像必須面對自己在生理上有所缺失。其實就像看不清楚時得配眼鏡輔助、牙齒耗損可以訂製假牙、聽不清楚則能選配助聽器。  
+                    </div>            
+                </a></div>   
+            </div></div>
+            <div class="hearing_box"><div>
+                <div class="img"><a href=""><div style="background-image: url(layout/img_column_06.jpg);"></div></a></div>
+                <div class="cont"><a href="">
+                    <div class="title">配戴助聽器後回聽力中心的後續追蹤</div>    
+                    <div class="desc">
+                        隨著時代變遷，助聽器的普及率與接受度逐漸升高。然而仍有些民眾對於助聽器仍抱持著敬而遠之的態度：覺得讓談話者說話時說大聲一點就好，甚至配戴就好像必須面對自己在生理上有所缺失。其實就像看不清楚時得配眼鏡輔助、牙齒耗損可以訂製假牙、聽不清楚則能選配助聽器。  
+                    </div>            
+                </a></div>   
+            </div></div>  
+            <div class="hearing_box moreBtn"><a href="">
+                <div class="btn"><div class="icon"></div><div class="text">更多聽力專欄</div></div>
+            </a></div>
+        </div><!--========== 聽力專欄 end ========== -->
+
+        <!-- ========== 聯絡我們 start ==========-->
+        <div class="IndexBlock IndexContactUs"><div>
+            <div class="indexTitle"><h2>聯絡我們</h2><div class="subtitle">CONTACT US</div></div>
+            <fieldset class="FormGroup FormElmt">
+                <legend class="form_group_title"><span>聯絡我們</span></legend>
+                <div class="textBlock"><span class="required">*</span>為必填</div>
+                <div class="FormTableWrap">
+                    <div class="FormTable col-2">
+                        <div class="item">
+                            <div class="title"><span class="required">*</span><label>姓名</label></div>
+                            <div class="cont"><input type="text" class="fullwidth" /></div>  
+                        </div>
+                        <div class="item">
+                            <div class="title"><span class="required">*</span><label>電話</label></div>
+                            <div class="cont"><input type="text" class="fullwidth" /></div>  
+                        </div>
+                        <div class="item">
+                            <div class="title"><label>地點</label></div>
+                            <div class="cont">
+                                <select title="請選擇門市" class="fullwidth">
+                                    <option>請選擇門市</option>
+                                    <option>基隆門市</option>
+                                    <option>台北復興門市</option>
+                                    <option>台北天母門市</option>       
+                                </select>
+                            </div>  
+                        </div>         
+                    </div>
+                    <div class="FormTable col-2">
+                        <div class="item">
+                            <div class="title"><span class="required">*</span><label>信箱</label></div>
+                            <div class="cont"><input type="text" class="fullwidth" /></div>  
+                        </div>
+                        <div class="item">
+                            <div class="title"><span class="required">*</span>性別</div>
+                            <div class="cont">
+                                <div class="input_group">
+                                    <div><label><input type="checkbox" name="">男</label></div>
+                                    <div><label><input type="checkbox" name="">女</label></div>
+                                </div>  
+                            </div>  
+                        </div>
+                        <div class="item">
+                            <div class="title"><span class="required">*</span>服務</div>
+                            <div class="cont">
+                                <div class="input_group">
+                                    <div><label><input type="checkbox" name="">預約免費聽力測試</label></div>
+                                    <div><label><input type="checkbox" name="">助聽器選配</label></div>
+                                    <div><label><input type="checkbox" name="">產品諮詢</label></div>
+                                    <div><label><input type="checkbox" name="">助聽器維修</label></div>
+                                    <div><label><input type="checkbox" name="">政府補助諮詢</label></div>
+                                    <div><label><input type="checkbox" name="">FM教學調頻系統諮詢</label></div>
+                                </div>    
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="FormTable col-1">
+                        <div class="item">
+                            <div class="title"><label>其他意見</label></div>
+                            <div class="cont"><textarea rows="5" class="fullwidth"></textarea></div>  
+                        </div>     
+                        <div class="item randomcodeBox">
+                            <div class="title"><span class="required">*</span><label>驗證碼</label></div>
+                            <div class="cont">
+                                <div class="randomcode">
+                                    <div class="input"><input type="text" title="輸入驗證碼" /></div>
+                                    <div class="img"><img src="layout/RandomCode.jpg" alt="驗證碼" /></div>
+                                    <div class="btn">
+                                        <span class="refresh"><input type="button" value="更換驗證碼" title="更換驗證碼" /></span>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>        
+            </fieldset>
+            <div class="BtnCommon large">
+                <div class="reset"><span><input type="reset" value="清除重填" /></span></div>
+                <div class="submit"><span><input type="submit" value="確認送出" /></span></div>
+            </div>
+        </div></div><!--========== 聯絡我們 end ========== -->
+
+        <!-- ========== 聯絡資訊 start ==========-->
+        <div class="IndexBlock IndexInfo"><div>
+            <div class="info_list">
+                <div class="item">
+                    <div class="iconBox"><img src="layout/icon_contact_01.png"></div>
+                    <div class="title">0800專線</div>
+                    <div class="cont"><span class="big">0800-580-889</span></div>
+                </div>
+                <div class="item">
+                    <div class="iconBox"><img src="layout/icon_contact_02.png"></div>
+                    <div class="title">E-mail</div>
+                    <div class="cont">website@drhearing.com.tw</div>
+                </div> 
+                <div class="item">
+                    <div class="iconBox"><img src="layout/icon_contact_03.png"></div>
+                    <div class="title">簡訊服務</div>
+                    <div class="cont">0952-586-757</div>
+                </div>  
+            </div>
+            
+        </div></div><!--========== 聯絡我們 end ========== -->
+
+    </div><!--IndexCenter end=====-->
+
+    <div class="BtnTop"><a href="#" title="回最上層">TOP</a></div>
+
+    <!--Footer-->
+    <footer id="Footer">
+        <div class="footerTop">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="">關於博士</a></li>
+                    <li><a href="">最新消息</a></li>
+                    <li><a href="">全國門市</a></li>
+                    <li><a href="">產品介紹</a></li>
+                    <li><a href="">影音專區</a></li>
+                    <li><a href="">聽友分享</a></li>
+                    <li><a href="">聽力專欄</a></li>
+                    <li><a href="">社會福利</a></li>
+                    <li><a href="">相關連結</a></li>
+                </ul> 
+            </div>
+            <div class="footer_social">
+                <div class="Line item"><div>
+                    <div class="QRcode"><img src="layout/img_QRcode.jpg" alt="博士助聽器 Line QR code"></div>
+                    <div class="cont">
+                        <div class="title">一起<img src="layout/tw/images/img_line.png" alt="Line">吧!</div>
+                        <div class="text">ID搜尋：<br> @roc7763u </div>
+                    </div>  
+                </div></div>
+                <div class="Facebook item"><div>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E5%258D%259A%25E5%25A3%25AB%25E5%258A%25A9%25E8%2581%25BD%25E5%2599%25A8-DrHearing-Group-549896291707597%2F&tabs=timeline&width=340&height=165&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                
+                </div></div>
+            </div>
+        </div>
+
+        <div class="footerBottom"><div>
+            <ul class="text">
+                <li>衛署醫器輸壹字第001209號</li>
+                <li>衛署醫器輸壹字第010085號</li>
+                <li>北市衛器廣字第108100077號</li>
+            </ul>
+            <div class="Copyright"><span>博士生物科技有限公司Dr.Hearing Group 版權所有</span></div>
+        </div></div>
+    </footer>
+
+    <!-- 行動裝置版選單-->
+    <div id="nav">
+        <div class="switch"><a href="#MenuMobile"><span class="menu-action"><i></i></span></a></div>
+        <div id="MenuMobile">
+            <ul>
+                <li class="mm-search"><span class="search_box"><input placeholder="站內搜尋" type="text" value="" /><input type="button" value="搜尋" class="btn" /></span></li>
+                <li><a href="index.html">首頁</a></li>         
+                <li><a href="">關於博士</a></li>                             
+                <li><a href="content/tw/news_list.html">最新消息</a>
+                    <ul>
+                        <li><a href="">學術研討會</a></li>
+                        <li><a href="">活動消息</a></li>
+                        <li><a href="">產品新知</a></li>
+                    </ul>
+                </li>                             
+                <li><a href="">全國門市</a></li>                             
+                <li><a href="">產品介紹</a>
+                    <ul>
+                        <li><a href="">助聽器</a>
+                            <ul>
+                                <li><a href="">商品1-1</a></li>
+                                <li><a href="">商品1-2</a></li>
+                                <li><a href="">商品1-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">FM調頻系統</a></li>
+                        <li><a href="">數位無線系統</a></li>
+                        <li><a href="">周邊輔具</a></li>
+                        <li><a href="">耳模資訊</a></li>
+                    </ul>
+                </li>                             
+                <li><a href="">影音專區</a>
+                    <ul>
+                        <li><a href="">聽力保健</a></li>
+                        <li><a href="">認識助聽器</a></li>
+                        <li><a href="">其他</a></li>
+                    </ul>
+                </li>                             
+                <li><a href="">聽友分享</a></li>                             
+                <li><a href="">聽力專欄</a></li>  
+                <li><a href="">社會福利</a></li>  
+                <li><a href="">相關連結</a></li>                                       
+            </ul>
+        </div>
+    </div>
+ 
+<!--下列css及網頁大集合連結為測試資料,套程式時請刪除-->
+<!-- <div class="ifun_text_menu">
+    <ul>
+        <li><a href="">Menu</a>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+				<li><a href="content/tw/news_cont.html">單篇</a></li>
+                <li><a href="content/tw/news_list.html">文字列表</a></li>         
+                <li><a href="content/tw/pic_list.html">圖文列表</a></li>
+
+            </ul>
+        </li>
+    </ul>
+</div> -->
+<!--網頁大集合end-->
+
+</div><!-- wrap end -->
+</body>
+</html>
