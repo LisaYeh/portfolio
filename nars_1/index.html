@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MOMO購物網</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />   
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+
+    <!-- CSS -->  
+    <link href="images/style.css" rel="stylesheet" type="text/css" /> 
+    <link href="images/style_rwd.css" rel="stylesheet" type="text/css" /> 
+    <link href="images/animate_wow.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" type="text/css" href="images/navlight.css">
+    <link rel="stylesheet" type="text/css"  href="images/uiLayout.css">
+    <link rel="stylesheet" type="text/css"  href="images/registerCSS.css">
+
+    <!-- == 自訂式 =============================================== -->
+    <!-- momoLOGO --> 
+    <style>
+     .Area_header_momologo { position: relative; }
+     .Area_header_momologo a { display:block; padding: 8px 0; -webkit-box-sizing: border-box; box-sizing: border-box; width:100%; height:32px; text-align: center; vertical-align: top; background-color:#d72873;}
+     @media screen and (min-width: 768px) {.Area_header_momologo { display: none !important;} }
+    </style>
+</head>
+
+
+<body>
+<div id="TOPblock"></div>
+<!--手機假天momoLOGO(不是APP顯示)--> 
+<div class="Area_header_momologo notAppShow">
+    <a href="https://m.momoshop.com.tw/main.momo" alt="momo購物網"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106px" height="16px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M103.343,16.000 L84.800,16.000 C83.331,16.000 82.146,14.873 82.146,13.483 L82.146,2.518 C82.146,1.127 83.331,0.000 84.800,0.000 L103.343,0.000 C104.810,0.000 106.000,1.127 106.000,2.518 L106.000,13.483 C106.000,14.873 104.810,16.000 103.343,16.000 ZM93.547,2.183 C91.581,2.483 86.411,4.377 86.411,8.794 C86.411,10.214 87.163,11.570 88.445,12.707 C89.347,13.507 90.595,13.996 90.338,13.758 C89.934,13.383 89.806,12.602 89.906,12.102 C90.172,10.776 91.275,10.383 91.275,10.383 C91.275,10.383 90.800,13.290 95.483,13.753 C95.762,13.789 96.407,13.806 96.443,13.806 C96.515,13.809 97.544,13.729 97.959,13.604 C100.013,13.195 101.732,11.613 101.732,8.662 C101.732,6.652 99.791,2.756 93.547,2.183 ZM74.307,4.705 L69.338,4.705 L69.338,16.000 L64.370,16.000 L64.370,4.705 L59.398,4.705 L59.398,16.000 L54.432,16.000 L54.432,2.517 C54.432,1.125 55.621,0.000 57.086,0.000 L76.624,0.000 C78.090,0.000 79.280,1.125 79.280,2.517 L79.280,16.000 L74.307,16.000 L74.307,4.705 ZM48.910,16.000 L30.370,16.000 C28.903,16.000 27.713,14.875 27.713,13.485 L27.713,2.521 C27.713,1.127 28.903,-0.000 30.370,-0.000 L48.910,-0.000 C50.379,-0.000 51.568,1.127 51.568,2.521 L51.568,13.485 C51.568,14.875 50.379,16.000 48.910,16.000 ZM46.902,5.316 C46.902,4.584 46.276,3.992 45.502,3.992 L33.828,3.992 C33.053,3.992 32.429,4.584 32.429,5.316 L32.429,10.687 C32.429,11.418 33.053,12.011 33.828,12.011 L45.502,12.011 C46.276,12.011 46.902,11.418 46.902,10.687 L46.902,5.316 ZM19.875,4.705 L14.906,4.705 L14.906,16.000 L9.937,16.000 L9.937,4.705 L4.966,4.705 L4.966,16.000 L0.000,16.000 L0.000,2.517 C0.000,1.125 1.189,0.000 2.654,0.000 L22.192,0.000 C23.658,0.000 24.848,1.125 24.848,2.517 L24.848,16.000 L19.875,16.000 L19.875,4.705 Z"/></svg></a>
+</div>
+
+<div id="Wrap">
+    <!--PC右側黏人精【亮】-->
+    <div class="fixed_Area fixed_Area_hide for_pc">
+      <div class="box">
+          <h2 style="margin-left:-23px;"><a class="js-fixed_Area_hide" href="javascript:void(0);"><img class="lazy" src="images/fixed_Area_top.png"></a></h2>
+          <ul class="fixedBox_1">   
+              <li class="Nav-slide"><a href="javascript:void(0);">下單享好禮</a></li>
+              <li class="Nav-slide"><a href="javascript:void(0);">限時搶購</a></li>
+              <li class="Nav-slide"><a href="javascript:void(0);">獨家超值</a></li>
+              <li class="Nav-slide"><a href="javascript:void(0);">經典熱銷</a></li>
+          </ul>
+          <h2 style="margin-left:-23px;"><a href="javascript:goTop('body')"><img class="lazy" data-original="images/fixed_Area_footer.png"></a></h2>
+      </div>
+      <h3 class="js-fixed_Area_hide"><i></i>快速導覽</h3>
+    </div>
+    <!--PC右側黏人精結束-->
+
+    <!--Phone選單套件【NavArea_tabbar公版錨點頁籤】-->
+    <div class="NavArea NavArea_tabbar" data-light="icon" data-Btn="" data-num="" data-toptext="" style="" >
+        <div class="Nav_bg"></div>
+        <div class="Nav_box">
+          <div class="Nav_toptext">活動主頁<i></i></div>     
+          <div class="Nav_Btn"><b data-opentext="Quick Menu"></b><i></i></div>
+          <div class="Nav">
+            <ul class="Nav-wrapper">
+                <li class="Nav-slide"><a href="javascript:void(0);">下單享好禮</a></li>
+                <li class="Nav-slide"><a href="javascript:void(0);">限時搶購</a></li>
+                <li class="Nav-slide"><a href="javascript:void(0);">獨家超值</a></li>
+                <li class="Nav-slide"><a href="javascript:void(0);">經典熱銷</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="Nav_target"></div>
+    </div> 
+    <style>
+        .NavArea_tabbar { margin:0 auto 0; width:100%; }
+        .NavArea_tabbar.cate-fixed { width:100%;}
+        .NavArea_tabbar .Nav_box { border-radius:0px; background-color:#f6f6f6;}
+        .NavArea_tabbar .Nav a { display:inline-block;}
+        .NavArea_tabbar.cate-fixed .Nav_box { border-radius:0; background-color:#fff;}
+    </style>  
+
+    <!--===== 上方Header start=================================================-->
+    <header id="Header">
+        <!--logo-->
+        <div class="Area_top">  
+            <div class="momologo"><a href="https://www.momoshop.com.tw/main/Main.jsp"></a></div> 
+        </div>
+
+        <!-- 品牌LOGO Header-->
+        <div class="BrandHeader"><div>
+            <h1 class="logo">NARS</h1>
+        </div></div>
+    </header> <!-- 上方Header end-->
+
+    <!--===== 主視覺banner =================================================-->
+    <div class="MainBanner">
+         <div class="img img_desktop"><img src="images/banner.jpg" alt=""></div>
+        <div class="img img_mobile"><img src="images/banner_mob.png" alt=""></div>          
+    </div>
+
+    <!--===== 活動BN =================================================-->
+    <!--<div class="PicColFullList lotteryBox">
+        <div class="item">
+            <div class="img img_desktop"><a href="javascript:agree('.agree_more');"><img src="images/img_topEvenBn.jpg" alt=""></a></div>            
+            <div class="img img_mobile"><a href="javascript:agree('.agree_more');"><img src="images/img_topEvenBn_mob.jpg" alt=""></a></div>            
+        </div>  
+    </div> -->
+
+    <!--===== 內容區 start=================================================-->
+    <div id="Center" class="content"><div>
+        <!-- 滿額贈好禮 -->
+        <div class="GiftBox indexBlock wow fadeInLeft js-navlight_content js-PC" data-wow-delay="0.4s"><div>
+            <div class="box_title">
+                <img class="img_desktop" src="images/title_01.png" alt="獨家好禮多重送">
+                <img class="img_mobile" src="images/title_mob_01.png" alt="獨家好禮多重送">
+            </div>
+
+            <div class="PicColTwoList gift_list img_desktop">
+                <div class="item">
+                    <img class="img_desktop" src="images/img_gift_01.png" alt="">
+                    <img class="img_mobile" src="images/img_gift_mob_01.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="img_desktop" src="images/img_gift_02.png" alt="">
+                    <img class="img_mobile" src="images/img_gift_mob_02.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="img_desktop" src="images/img_gift_03.png" alt="">
+                    <img class="img_mobile" src="images/img_gift_mob_03.png" alt="">
+                </div>
+                <div class="item">
+                    <img class="img_desktop" src="images/img_gift_04.png" alt="">
+                    <img class="img_mobile" src="images/img_gift_mob_04.png" alt="">
+                </div>
+            </div>  
+
+            <div class="PicColFullList img_desktop">
+                <div class="item">
+                    <div class="img"><img src="images/img_gift_bottom.png" alt="NARS歌舞伎刷具4件組"></div>
+                </div>
+            </div>
+
+            <div class="txt img_desktop">贈品數量有限，送完為止</div>  
+
+            <!-- 滿額贈好禮 MB -->
+            <div class="PicColFullList img_mobile">
+                <div class="item">
+                    <div class="img"><img src="images/img_gift_mob.png" alt="獨家好禮多重送"></div>
+                </div>
+            </div> 
+        </div></div>
+
+        <!-- 腰帶banner -->
+        <div class="indexBlock PicColFullList banner_01  wow fadeInLeft" data-wow-delay="0.4s">
+            <div class="item">
+                <div class="img img_desktop"><a href="https://www.momoshop.com.tw/edm/cmmedm.jsp?npn=1vEIQooadmEr&n=1" target="_parent"><img src="images/img_bn_01.jpg" alt="如光隨行 為光而生 全新上市#NARS小光瓶"></a></div>
+                <div class="img img_mobile"><a href="https://www.momoshop.com.tw/edm/cmmedm.jsp?npn=1vEIQooadmEr&n=1" target="_parent"><img src="images/img_bn_01_mob.jpg" alt="如光隨行 為光而生 全新上市#NARS小光瓶"></a></div>
+            </div>
+        </div> 
+
+        <!-- 獨家組合 限時搶購 -->
+        <div class="indexBlock specialProBox wow fadeInLeft" data-wow-delay="0.4s">
+            <div class="box_title js-navlight_content js-PC">
+                <img class="img_desktop" src="images/title_02.png" alt="獨家組合 限時搶購">
+                <img class="img_mobile" src="images/title_mob_02.png" alt="獨家組合 限時搶購">
+            </div>
+            <div class="PicColTwoList">
+                <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9563516" target="_parent"><div class="img"><img src="images/img_spePro_01.png" alt="經典遮瑕1+1組"></div></a></div>
+                <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9972337" target="_parent"><div class="img"><img src="images/img_spePro_02.png" alt="王牌氣墊1+1組"></div></a></div>
+            </div>
+            <!--<div class="PicColFourList">
+                <div class="item"><a href="" target="_parent"><img src="images/img_spePro_01.png"></a></div>
+                <div class="item"><a href="" target="_parent"><img src="images/img_spePro_02.png"></a></div>
+                <div class="item"><a href="" target="_parent"><img src="images/img_spePro_01.png"></a></div>
+                <div class="item"><a href="" target="_parent"><img src="images/img_spePro_02.png"></a></div>
+            </div>  -->
+        </div>  
+
+        <!-- 主打品 -->
+        <!-- 裸光美肌 獨家超值組 -->
+        <div class="hotProductBox">
+            <div class="box_title js-navlight_content js-PC wow fadeInLeft" data-wow-delay="0.2s">
+                <img class="img_desktop" src="images/title_03.png" alt="裸光美肌 獨家超值組">
+                <img class="img_mobile" src="images/title_mob_03.png" alt="裸光美肌 獨家超值組">
+            </div>
+
+            <!-- 單欄圖片列表 -->
+            <div class="PicColFullList indexBlock wow fadeInLeft" data-wow-delay="0.3s">
+                <div class="item item_01 wow fadeInDown"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9918753" target="_parent">
+                    <div class="img"><img src="images/img_hot_product_01.png" alt="裸光底妝禮盒限定組"></div>            
+                </a></div>  
+
+                <div class="item item_02 wow fadeInDown" data-wow-delay="0.3s"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9320471" target="_parent">
+                    <div class="img"><img src="images/img_hot_product_02.png" alt="雲霧誘惑美唇組"></div>            
+                </a></div>  
+
+                <div class="item item_03 wow fadeInDown" data-wow-delay="0.6s"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9305945" target="_parent">
+                    <div class="img"><img src="images/img_hot_product_03.png" alt="裸光蜜粉餅1+1組"></div>            
+                </a></div>  
+
+                <div class="item item_04 wow fadeInDown" data-wow-delay="0.6s"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9852592" target="_parent">
+                    <div class="img"><img src="images/img_hot_product_04.png" alt="小肌蛋底妝必收組"></div>            
+                </a></div> 
+            </div>
+        </div>
+
+        <!-- 活動商品 -->
+        <div class="EventProTopic indexBlock js-navlight_content js-PC">
+            <div class="PicColFullList">
+                <div class="item">
+                    <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2170000002" target="_parent"><img class="img_desktop" src="images/img_pro_banner.jpg" alt="經典熱銷 人氣組合"></a>
+                    <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2170000002" target="_parent"><img class="img_mobile" src="images/img_pro_banner.jpg" alt="經典熱銷 人氣組合"></a>
+                </div>      
+            </div>
+            <!-- 商品 -->
+            <div class="proBox pro_top_box js-navlight_content js-PC">
+                <div class="event_list col_four_list">
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9892790" target="_parent">
+                        <div class="img"><img src="images/img_pro_01.jpg" alt="王牌底妝必收組"></div>
+                    </a></div>
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9919108" target="_parent">
+                        <div class="img"><img src="images/img_pro_02.jpg" alt="裸光肌萃底妝組"></div>
+                    </a></div>
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9933373" target="_parent">
+                        <div class="img"><img src="images/img_pro_03.jpg" alt="雲霧誘惑新粉限定組"></div>
+                    </a></div>
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9933374" target="_parent">
+                        <div class="img"><img src="images/img_pro_04.jpg" alt="雲霧誘惑惹火超值組"></div>
+                    </a></div> 
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9891616" target="_parent">
+                        <div class="img"><img src="images/img_pro_05.jpg" alt="王牌氣墊雙蕊組"></div>
+                    </a></div>
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9770052" target="_parent">
+                        <div class="img"><img src="images/img_pro_06.jpg" alt="激情過後嫩唇超值組"></div>
+                    </a></div>
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9769531" target="_parent">
+                        <div class="img"><img src="images/img_pro_07.jpg" alt="極致激情唇頰組"></div>
+                    </a></div>
+                    <div class="item"><a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9333590" target="_parent">
+                        <div class="img"><img src="images/img_pro_08.jpg" alt="經典唇膏禮盒1+1組"></div>
+                    </a></div>                     
+                </div>
+            </div>
+        </div>
+
+        <div class="bannerBtn PicColFullList indexBlock">
+            <div class="item"><a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2170000002" target="_parent">
+                <img src="images/img_btn.png" alt="NARS官方旗艦館">
+            </a></div>      
+        </div>
+
+    </div></div> <!-- 內容區 end-->
+
+    <!--===== Go Top start =================================================-->
+    <div class="GoTopBtn"><a href="#TOPblock"><img src="images/icon_gotop.svg"></a></div>
+    <!--===== Go Top end =================================================-->
+
+
+<!-- ↓浮層區-詳情開始01↓-->
+<!-- <div class="blackBox agree_more">
+      <div class="agreeArea">
+            <div class="box">
+                 <span class="close"><a href="javascript:void(0);">X 關閉</a></span>
+                  <h3>IPSA 狂歡生日慶★下單抽日本SONGEN小冰箱<br><span style="font-size: 0.875em;">(3名，採事後撈單抽獎)</span></h3>
+                  <div class="txtArea">
+                      <ul>
+                          <li>活動時間：3/7-3/13</li>
+                          <li>活動辦法：購買IPSA指定商品，下單完成結帳即符合抽獎資格。
+                            消費所購買之商品無付款失敗、訂單取消、退貨等取消交易之情事(且購買商品超過10天鑑賞期)方列入抽獎計算。
+                          </li>
+                          <li>活動說明：活動期間至momo購物網購買品牌指定商品，滿規定門檻即符合抽獎資格，此活動無登記查詢頁面，採取訂單編碼抽獎。
+                            抽獎相關事宜將由廠商主動告知，預計2022/04 聯繫告知中獎資訊。
+                          </li>
+                          <li>注意事項：以註冊會員登錄之會員資料為主，若因會員資料填寫不完整，或活動後變更資料(如姓名、手機、地址等)，導致無法收到商品，信件無人領取被退件數不補發。
+                            大宗採購者、假帳號、非本人身分證皆不符合活動資格，若發現有以上情況者，主辦單位保有活動結束後篩選與取消登記資格的權力。     
+                          </li>
+                      </ul>
+                </div>  
+              </div>
+        </div>
+  </div> 
+<div class="Boxclose"></div> -->
+<!-- ↑浮層區-詳情結束01↑-->
+
+</div> 
+
+    <!-- JS -->
+    <script src="images/jquery-1.11.1.min.js"></script>  
+    <script charset="utf-8" language="javascript" type="text/javascript" src="images/main.js"></script>
+    <!--Phone-選單套件-->
+    <script charset="utf-8" language="javascript" type="text/javascript" src="images/navlight.js"></script>
+    <script charset="utf-8" language="javascript" type="text/javascript" src="images/navlight_main.js"></script> 
+
+    <script src="images/jquery-systex.js"></script>    
+    <script src="images/wow.min.js"></script>
+
+    <!--活動提醒機制-->
+    <script charset="utf-8" language="javascript" type="text/javascript" src="images/Remind.js"></script>
+    <script charset="utf-8" language="javascript" type="text/javascript" src="images/setRemind.js"></script>
+
+    <!--彈跳視窗套件(折價券＆登記共用)-->
+    <script charset="utf-8" data-title="SweetAlert2彈跳視窗套件" language="javascript" type="text/javascript" src="https://image.momoshop.com.tw/ecm/js/edm/sweetalert2.all.min.js?t=202011170001"></script>
+    <!--折價券機制(需套彈跳視窗套件)-->
+    <script charset="utf-8" data-title="www.網址折價券機制" language="javascript" type="text/javascript" src="https://image.momoshop.com.tw/ecm/js/edm/getCoupon_ms.js?t=202011170001"></script>
+
+    <!--登記(需套彈跳視窗套件)-->
+    <link href="images/registerCSS.css" rel="stylesheet" type="text/css"/>
+    <script charset="utf-8" language="javascript" type="text/javascript" src="images/registerActivity.js" id="itjs"></script>
+    <script charset="utf-8" language="javascript" type="text/javascript" src="images/setRegisterActivity.js"></script>
+
+    <script>
+        //啟動wow動畫 (桌機版顯示)
+        $(function () {
+            if ($(window).width() > 1024) {
+                new WOW().init();
+            }
+        });
+
+        // TOP BTN
+        $(document).ready(function(){
+            $( ".GoTopBtn a" ).click(function( event ) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 100 }, 0);
+            });
+        });
+    </script>
+
+</body>
+</html>
