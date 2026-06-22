@@ -1,0 +1,452 @@
+/*----------------------------------------------------------------------*/
+/* RWD設定 */
+/*----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/* 移動裝置-w1023px以下 */
+@media screen and (max-width: 1023px){
+    /* Header */
+    .BrandHeader{ display: none; }
+
+    /*Menu*/
+    #Menu { position: fixed; top: 40px; z-index: 999; width: 100%; }
+    #Menu .logo_mobile{ max-width: 100px; }
+    #Menu .logo_mobile a{ display: block; }
+    #Menu .logo_mobile img{ display: block; max-width: 100%; }
+
+    /*右側導覽FixedMenu */
+    .FixedMenu{ display: none; }
+
+    /* 商品類別 */
+    .ProductCatList{ padding-left: 10px; max-width: 70%; }
+    .ProductCatList .item{ width: 25%; padding: 2% 0; }  
+
+    /*共用項目*/
+    .indexBlock{ padding-left: 15px; padding-right: 15px; }
+
+    /*主打標題*/
+    .FocusTitleImg{ padding: 10px 0; }
+
+    /*單欄圖片列表*/
+    .PicColFullList .item{ margin-bottom: 20px; }
+
+    /*兩欄圖片列表*/
+    .PicColTwoList{ margin-bottom: 1.85em; }
+    .PicColTwoList .item{ padding: 10px 15px; }
+
+    /*三欄圖片列表*/
+    .PicColThreeList{ margin-bottom: 1.85em; }
+    .PicColThreeList .item{ padding: 10px 15px; } 
+
+    /*四欄圖片列表*/
+    .PicColFourList{ margin-bottom: 1.85em; }
+    .PicColFourList .item{ padding: 10px 15px; } 
+
+    /* 主題活動 */
+    .EventProTopic .proBox{ margin-bottom: 2em; }
+    .EventProTopic .event_title{  } 
+
+    /* 活動列表-樣式 */
+    .proBox .event_list .item{ padding: 10px; }
+    .proBox .event_list.col_four_list .item{ width: 50%; }
+
+    /* 其他品牌活動 */
+    .EventProOther{ margin-bottom: 1.875em; }
+    .EventProOther .banner a.desktop{ display: none; }
+    .EventProOther .proBox{ width: 100%; margin-bottom: 20px; }
+    .EventProOther .proBox:last-child{ margin-bottom: 0; }
+
+    /* 中獎公告 */
+    .FullPicBox{ margin-bottom: 2.5em; }
+
+    /* 影片 */
+    .MediaBox{ margin-bottom: 2.5em; }
+    .MediaBox > div{ padding: 15% 45px 45px 45px; } 
+
+    /* GoTop */
+    .GoTopBtn{ bottom: 15%; }
+
+    .GiftBox{ padding-top: 0; margin-top:0; }
+    .GiftBox > div{ padding: 20px; }
+
+    .EventProTopic.indexBlock{ padding-left: 0; padding-right: 0; }
+
+    .GiftBox .PicColFullList .item{ padding-left: 15px; padding-right: 15px; }
+}
+
+@media screen and (max-width: 1200px){
+    .PchomeHeader > div{ height: 30px; }
+    .PchomeHeader .logo{ margin: auto; }
+    .PchomeHeader .col_right, .PchomeHeader .shoplist, .BrandHeader h2.title{  
+        display: none;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1023px){
+    #Center{ padding-top: 80px; }
+
+    .GiftBox .box_title{ max-width: 450px; }
+    .specialProBox .box_title{ max-width: 450px; }
+    .hotProductBox .box_title{ max-width: 450px; }
+
+    /* 活動列表-樣式 */
+    .proBox .event_list.col_four_list .item{ width: 25%; }
+    .proBox .event_list.col_two_list .item{ width: 50%; }
+    .proBox .event_list .item{ padding: 4px; }
+    .proBox .event_list .title{ font-size: 1rem; padding-top: 5px; }
+    .proBox .event_list .pro_title{ font-size: 0.85rem; }
+
+    .EventProTopic{ max-width: 95%; margin:5em auto 0 auto; }
+    .EventProTopic .event_title{ max-width: 630px; margin: auto; }
+
+    .GiftBox .box_title{ margin-top: -60px; }
+    .specialProBox .box_title{ margin-top: -40px; max-width: 490px; }
+    .hotProductBox .box_title{ margin-top: -40px; max-width: 490px; }
+    .hotProductBox{ margin-top: 30px; }
+
+    .GiftBox > div{ box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px){
+    #Center{ padding-top: 60px; }
+
+    .GiftBox .box_title{ max-width: 450px; }
+    .specialProBox .box_title{ max-width: 450px; }
+    .hotProductBox .box_title{ max-width: 450px; }
+
+    /* 主題活動 */
+    .EventProTopic .event_title{ max-width: 630px; margin: auto; }
+    .EventProTopic{ max-width: 95%; margin:50px auto auto auto; }
+
+    /* 活動列表-樣式 */
+    .proBox .event_list .title{ height: 60px; font-size: 1.5rem; padding-top: 7px; }
+    .proBox .event_list .pro_title{ font-size: 1.125rem; }
+
+    .GiftBox{ padding-top: 20px; }
+    .col_half_box .proBox{ width: 50%; }
+
+    .GiftBox .box_title{ margin-top: -60px; padding-bottom: 15px; }
+    .specialProBox .box_title{ margin-top: -40px; }
+    .specialProBox{ margin-left: 15px; margin-right:15px; }
+    .banner_01.PicColFullList{ padding-bottom: 70px; }
+    .specialProBox{ margin-bottom: 70px; }
+
+    .GiftBox > div{ box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px){
+    /* 活動列表-樣式 */
+    .proBox .event_list .title{ height: 60px; font-size: 1.5rem; padding-top: 7px; }
+    .proBox .event_list .pro_title{ margin-top: -5px; }
+}
+
+@media screen and (max-width: 767px){
+    /*共用項目*/
+    .Area_top{ display: none; }
+    .fixed_Area{ display: none; }
+    .indexBlock{ padding-left: 10px; padding-right: 10px; }
+    .img_mobile{ display: block; }
+    .img_desktop{ display: none; }
+
+    .MainBanner{ margin-bottom: -85px; }
+
+    /* 商品類別 */
+    .ProductCatList{ max-width: 90%; }
+
+    /* 主題活動 */
+    .EventProTopic.indexBlock{ padding-left: 0; padding-right: 0; }
+    .EventProTopic .proBox{ background-image: none !important; background-color: transparent !important; }
+    .EventProTopic .img_mobile{ display: block; }
+    .EventProTopic .img_mobile img{ display: block; }
+
+    /* 活動列表-樣式 */
+    .proBox .event_list .item{ padding: 5px; }
+
+    /* 其他品牌活動 */
+    .EventProOther.indexBlock{ padding-left: 0; padding-right: 0; }
+
+    /* 影片 */
+    .MediaBox > div{ padding: 13% 20px 50px 20px; } 
+
+    .EventProTopic{ margin-top: 15px; }
+    .EventProTopic .event_list{ padding: 0 5px 10px 5px; }
+    .EventProTopic .PicColFullList .item{ margin-bottom: 10px; }
+    .EventProTopic .pro_top_box .event_title{ padding-left: 10px; padding-right: 10px; 
+        top: -30px; margin-bottom: -30px; 
+    }
+
+    .GiftBox{ padding-top: 20px; margin-bottom: 0; margin-top: 10px; padding-left: 0; padding-right: 0; }
+    .GiftBox > div{ padding:0; background-color: rgba(255,255,255,0); }
+    .GiftBox .gift_list{ padding-left: 6px; }
+    .GiftBox .PicColTwoList .item{ margin-bottom: 20px; }
+    .GiftBox .PicColTwoList .item:nth-child(2n+1){ padding-right: 5px; }
+    .GiftBox .PicColTwoList .item:nth-child(2n+2){ padding-left: 5px; }
+    .GiftBox .txt{ margin-top: 0; }
+
+    .GiftBox2.img_mobile{ margin-top: 15px; }
+    .lotteryBox.PicColFullList .item{ margin-bottom: 20px; }
+
+    .hotProductBox .PicColFullList .item img{ transform: scale(1.04); }
+    .hotProductBox .PicColFullList .item a:hover img{ transform: scale(1); }
+    .col_half_box .proBox{ width:100%; }
+
+    .GiftBox .box_title{ max-width: 350px; padding-bottom: 0;  margin-top: 15px; 
+        position: relative; z-index: 99;
+     }
+    .GiftBox .PicColFullList{ margin-top: -30px; }
+    .specialProBox .box_title{ max-width: 380px; }
+    .hotProductBox .box_title{ max-width: 380px; margin-bottom: 20px; }
+    .hotProductBox .PicColFullList { padding-left: 30px; padding-right: 30px; }
+    .hotProductBox .item_01{ padding-bottom: 0px; }
+    .hotProductBox .item_02{ padding-bottom: 30px; }
+    .hotProductBox .item_03{ padding-bottom: 0px; }
+    .hotProductBox .item_04{ padding-bottom: 0px; }
+
+    .banner_01.PicColFullList{ padding-bottom: 25px; padding-left: 30px; padding-right: 30px; }
+    .specialProBox{ margin-bottom: 50px; margin-top: 30px; }
+    .specialProBox .box_title{ margin-top: -35px; padding-bottom: 10px; }
+    .specialProBox{ margin-left: 30px; margin-right: 30px; }
+    .specialProBox .PicColTwoList{ margin-bottom: 0; }
+
+    .bannerBtn{ padding-top: 0; }
+}
+
+@media screen and (max-width: 639px){
+    /*Menu*/
+    #Menu .stellarnav.mobile .menu-toggle{ color: transparent; }
+
+    /* 主視覺banner */
+    .MainBanner{ margin-bottom: -50px; }
+    .MainBanner .img_desktop{ display: none; }
+
+    /* 中獎公告 */
+    .FullPicBox .img.img_desktop{ display: none; }
+
+    /*兩欄圖片列表*/
+    .PicColTwoList .item{ padding: 5px; width: 100%; }
+
+    /*三欄圖片列表*/
+    .PicColThreeList .item{ padding: 10px; width: 100%; }
+
+    /*四欄圖片列表*/
+    .PicColFourList .item{ padding: 10px; width: 50%; }
+
+    .GiftBox{ padding-top: 10px; margin-top: 0px; }
+    .GiftBox .PicColTwoList .item{ width: 50%; }
+    .GiftBox .PicColTwoList .item{ padding: 0; }
+    .EventProTopic .txt{ padding:0 10px 20px 10px; font-size: 0.875rem; }
+
+    /* 商品類別 */
+    .ProductCatList{ max-width: 100%; } 
+
+    /* 活動列表-樣式 */
+    .proBox .event_list .title{ font-size: 1.125rem; }
+    .proBox .event_list .price .special_offer span{ font-size: 1.75rem; }
+
+    /* 影片 */
+    .MediaBox{ margin-bottom: 1.5em; }
+
+    .col_half_box .proBox{ width:100%; }
+    .col_half_box .event_title{ padding-left: 10px; padding-right: 10px; }
+    .GiftBox .box_title{ margin-top: -25px; }
+
+    .GiftBox .txt{ font-size: 0.875rem; }
+    .GiftBox .PicColFullList{ margin-top: -25px; }
+    .specialProBox{ margin-left: 30px; margin-right: 30px; }
+    .specialProBox .PicColTwoList { padding-left:0; padding-right:0; margin-bottom: 0; }
+    .specialProBox .PicColTwoList .item{ width: 50%; }
+    .GiftBox{ padding-left: 0; padding-right: 0; }
+
+    .GiftBox .box_title{ max-width: 220px;  margin-top: 15px; }
+    .specialProBox .box_title{ max-width: 220px; }
+    .hotProductBox .box_title{ max-width: 220px; }
+    .specialProBox{ margin-top: 10px; }
+    .specialProBox .box_title{ margin-top: -20px; }
+
+    .EventProTopic.indexBlock{ margin-left: 10px; margin-right: 10px; }
+    .GiftBox .PicColFullList .item{ padding-left: 0; padding-right: 0; }
+    .banner_01.PicColFullList{ padding-left: 15px; padding-right: 15px; }
+    .specialProBox{ margin-left: 15px; margin-right: 15px; }
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px){
+    /* 活動列表-樣式 */
+    .proBox .event_list .title{ font-size: 1rem; padding-top: 4px; }
+    .proBox .event_list .pro_title{ font-size: 0.875rem; }
+}
+
+@media screen and (max-width: 479px){
+    /* 活動列表-樣式 */
+    .proBox .event_list .item{ padding: 3px; }
+    .proBox .event_list .title{ margin-top: 0; font-size: 13px; padding-top: 7px; background-size: 100%; }
+    .proBox .event_list .pro_title{ font-size:12px; margin-top: -6px; }
+    .proBox .event_list .price { font-size: 12px; margin-bottom: 4px; margin-top: 4px; }
+    .proBox .event_list .price .special_offer{ font-size: 1rem; }
+    .proBox .event_list .price .special_offer span{ font-size: 1.25rem; }
+
+    .GiftBox .PicColFullList{ margin-top: -20px; }
+    .GiftBox .box_title{ max-width: 190px;  margin-top: 15px; }
+    .specialProBox .box_title{ max-width: 200px; }
+    .hotProductBox .box_title{ max-width: 200px; }
+    .specialProBox{ margin-bottom: 40px; }
+}
+@media screen and (min-width: 320px) and (max-width: 410px){
+}
+
+@media screen and (min-width: 640px){
+    .col_half_box .proBox{ width: 100%; }
+}
+
+@media screen and (min-width: 768px){
+    /* 公用區塊 */
+    .img_mobile{ display: none; }
+
+    /* 主題活動 */
+    .EventProTopic .img_mobile{ display: none; }
+
+    .GiftBox > div{
+        padding-left: 2.45901%; padding-right: 2.45901%; padding-bottom: 2%;
+    }
+}
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/* 桌機版-w1024px以上 */
+@media screen and (min-width: 1024px){
+    body{ background:url(bg.jpg); 
+        background-position: top center;
+        /*background-size: cover; */
+        background-size: 100%;
+    }
+    #Wrap{ background-image: url('bg_bottom.png'); background-position: bottom center; 
+        background-repeat: no-repeat;
+    }
+
+    .box_title img{ width: auto; }
+
+    /* 商品類別 */
+    .ProductCatList .item{ width: 12.5%; padding: 3% 0; }
+
+    /*主打標題*/
+    .FocusTitleImg{ padding: 2% 0; }
+
+    /*兩欄圖片列表*/
+    .PicColTwoList{ margin-bottom: 1.25em; }
+    .PicColTwoList .item{ padding: 10px 15px; }
+    .PicColTwoList .item:nth-child(2n+1){ padding-left: 0; }
+    .PicColTwoList .item:nth-child(2n+2){ padding-right: 0; }
+
+    /*三欄圖片列表*/
+    .PicColThreeList{ margin-bottom: 3.125em; }
+    .PicColThreeList .item{ padding: 1%; }
+
+    /*四欄圖片列表*/
+    .PicColFourList{ margin-bottom: 3.125em; }
+    .PicColFourList .item{ padding: 1%; }
+
+    /* 主題活動 */
+    .EventProTopic .proBox.pro_top_box{ margin-top: -1.75em }
+    .EventProTopic .proBox{ margin-bottom: 1.25em; margin-top: 1.25em }
+    .EventProTopic .event_title{ }
+
+    /* 活動列表-樣式 */
+    .proBox .event_list .pro_title{ margin-top: -5px; }
+
+    /* 其他品牌活動 */
+    .EventProOther{ margin-bottom: 3.125em; }
+    .EventProOther .banner a.mobile{ display: none }
+    .EventProOther .proBox{ width: 50%; }
+    .EventProOther .proBox:nth-child(2n+1) .banner{ padding-right: 1%; }
+    .EventProOther .proBox:nth-child(2n+2) .banner{ padding-left: 1%; }
+
+    /* 中獎公告 */
+    .FullPicBox{ margin-bottom: 5em; }
+
+    /* 影片 */
+    .MediaBox{ margin-bottom: 3.125em; }
+
+    .col_half_box .proBox{ width: 50%; }
+
+    .hotProductBox .PicColFullList .item{ margin-bottom: -60px; }
+    .hotProductBox .PicColFullList .item:last-child{ padding-bottom: 50px; }
+
+    .GiftBox > div{ box-shadow: 0 10px 40px rgba(0,0,0,0.2); }
+}
+
+@media screen and (min-width: 1200px){  
+    .PchomeHeader .col_left{ float: left; }
+    .PchomeHeader .col_right{ float: right; }
+    .PchomeHeader .logo{ position: absolute; top: 0; left: 0; }
+
+    #Menu .logo_mobile{ display: none; }
+
+    /* 影片 */
+    .MediaBox > div{ padding: 150px 45px 65px 45px; }
+
+    .GiftBox > div{ padding:30px 50px; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    /* Header */
+    .PchomeHeader{ padding: 0; height: 40px; }
+    .PchomeHeader .logo{ padding: 3px; line-height: 40px; }
+    .BrandHeader{ display: none; }
+
+    #Center{ padding-left: 30px; padding-right: 30px; }
+
+    /*Menu*/
+    #Menu .logo_mobile{ max-width: 100px; }
+    #Menu .logo_mobile a{ display: block; }
+    #Menu .logo_mobile img{ display: block; max-width: 100%; }
+
+    /*Menu*/
+    #Menu { position: fixed; top: 40px; z-index: 999; width: 100%; }
+
+    /*共用項目*/
+    .indexBlock{ padding-left: 15px; padding-right: 15px; }
+
+    /*主打標題*/
+    .FocusTitleImg{ padding-left: 15px; padding-right: 15px; }
+
+    /*SBW滿額贈*/
+    .CouponBox{ padding-top: 2em; }
+
+    /*主題活動*/
+    .proBox .event_list.col_four_list .item{ width: 25%; }
+    .proBox .event_list.col_two_list .item{ width: 50%; }
+    .proBox .event_list .item{ padding: 4px; }
+    .proBox .event_list .title{ font-size: 1.188rem; }
+    .proBox .event_list .pro_title{ font-size: 1rem; }
+
+    /* 影片 */
+    .MediaBox > div{ padding: 150px 45px 55px 45px; } 
+
+    .col_half_box .proBox{ width: 50%; }
+
+    .GiftBox{ margin-top: 0; }
+    .GiftBox > div{ padding: 30px; }
+
+    .EventProTopic{ margin-top: 20px; }
+    .EventProTopic.indexBlock{ padding-left: 0; padding-right: 0; }
+}
+
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+/* 動畫設定 */   
+@media screen and (min-width: 1024px){  
+    .fixed_list ul li a, .FixedMenu .btn a, .fixed_slide_banner .item a img{  
+        transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+    }
+}
+
+
+
